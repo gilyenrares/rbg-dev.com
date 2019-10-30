@@ -1,5 +1,4 @@
 <!--Forgot password-->
-<?php require 'modal_resetpasswordsent.php'; ?>
 <div id="resetPassword" class="modal">
   <form class="modal_container modal-content animate" action="includes/reset-request.inc.php" method="post">
     <div class="imgcontainer">

@@ -1,4 +1,4 @@
-Forum <!-- Header -->
+<!-- Header -->
  <?php
  session_start();
   ?>

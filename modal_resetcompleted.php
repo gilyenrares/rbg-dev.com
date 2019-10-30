@@ -1,5 +1,5 @@
 <!--Reset Password Sent confirmation-->
-<div id="resetPasswordSent" class="modal">
+<div id="resetCompleted" class="modal">
   <form class="modal-content animate">
     <div class="imgcontainer">
       <img src="images/img_user.png" alt="Avatar" class="avatar">
@@ -13,7 +13,7 @@
 
 <script>
 // Get the modal
-var modal = document.getElementById('resetPasswordSent');
+var modal = document.getElementById('resetCompleted');
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

@@ -39,7 +39,7 @@ include 'hamburger.php';
 <?php
 include 'menu.php';
  ?>
-
+ 
 <!-- Home -->
 	<div class="home">
 		<div class="background_image" style="background-image:url(images/index.jpg)"></div>
@@ -179,7 +179,6 @@ include 'footer.php';
    ?>
 
 </div>
-
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
 <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
