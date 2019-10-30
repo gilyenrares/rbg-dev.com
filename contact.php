@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="RGB Website Development">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
+<link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149412340-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149412340-1');
+</script>
+</head>
+<body>
+
+<div class="super_container">
+
+	<!-- Header -->
+<?php
+include 'header.php';
+ ?>
+
+	<!-- Hamburger -->
+<?php
+include 'hamburger.php';
+ ?>
+
+ <!-- Menu -->
+<?php
+include 'menu.php';
+?>
+
+ <!-- Login Form-->
+<?php
+include 'login_form.php'
+  ?>
+
+	<!-- Home -->
+	<div class="home_global">
+		<div class="background_image" style="background-image:url(images/extra_wide.jpg)"></div>
+		<div class="overlay"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<h1><div class="home_title">Contact</div></h1>
+							<h2><div class="home_subtitle">Contact us for more details</div></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+
+				<!-- Contact Content -->
+				<div class="col-lg-4">
+					<div class="contact_content">
+						<div class="contact_logo">
+							<div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RGB<span>DEV</span></div></div>
+						</div>
+						<div class="contact_text">
+							<p>Contact RBG Development for any questions, requests or any type of inquiry.</p>
+						</div>
+						<div class="contact_list">
+							<ul>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>A:</div></div>
+									<div><a href="#address">Queensbury, London, United Kingdom, NW99</a></div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>P:</div></div>
+									<div><a href="tel:+4474 925 65888">+4474 925 65888</a></div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>E:</div></div>
+									<div><a href = "mailto: gilyenrares@gmail.com">gilyenrares@gmail.com</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-lg-8 contact_col">
+					<div class="contact_title">Contact Form</div>
+					<div class="contact_form_container">
+						<form action="includes/contact.inc.php" method="post" id="contact_form" class="contact_form">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="input_item"><input type="text" name="fn" class="contact_input trans_200" placeholder="First Name" required="required"></div>
+								</div>
+								<div class="col-lg-6">
+									<div class="input_item"><input type="text" name="ln" class="contact_input trans_200" placeholder="Last Name" required="required"></div>
+								</div>
+							</div>
+							<div class="input_item"><input type="email" name="email" class="contact_input trans_200" placeholder="E-mail" required="required"></div>
+							<div class="input_item">
+								<textarea type="text" name="message" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
+							</div>
+							<button type="submit" name="contact-submit" class="contact_button button">Send<span></span></button>
+						</form>
+					</div>
+				</div>
+
+			</div>
+			<div class="row google_map_row" id="address">
+				<div class="col">
+
+					<!-- Contact Map -->
+
+					<div class="contact_map">
+
+						<!-- Google Map -->
+
+						<div class="map">
+							<div id="google_map" class="google_map">
+								<div class="map_container">
+									<div id="map"><script >
+										function initMap() 
+										{
+										 // The location of RBG
+											var uluru = {lat: 51.594417, lng: -0.275742};
+										// The map, centered at 
+											var map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: uluru});
+										// The marker, positioned at Uluru
+											var marker = new google.maps.Marker({position: uluru, map: map});
+										}</script>
+										<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDt_-OQTqONgw4mhhl6d0G8uo3RZPOzcgw&callback=initMap"></script>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+  <?php
+include 'footer.php';
+   ?>
+
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
