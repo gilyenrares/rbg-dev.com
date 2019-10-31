@@ -2269,7 +2269,9 @@ margin-top: 50px;
 	width: 100%;
 }
 /* Full-width input fields */
-input[type=text], input[type=password], input[type=email], textarea[type=text] {
+input[type=text], input[type=password], input[type=email], 
+textarea[type=text], input[type=address], input[type=Postcode], 
+input[type=number] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
