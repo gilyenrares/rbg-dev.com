@@ -21,7 +21,8 @@ if (isset($_POST['reset-request-submit'])) {
 	} else{
 		mysqli_stmt_bind_param($stmt, "s", $userEmail);
 		mysqli_stmt_execute($stmt);
-	}// Sql statement that applies a selector, token and expiration date to the user account 
+	}
+	// Sql statement that applies a selector, token and expiration date to the user account 
 	$sql = "INSERT INTO pwsReset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
