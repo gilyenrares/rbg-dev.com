@@ -16,7 +16,7 @@ if (isset($_POST["reset-password-submit"])) {
 
 	$currentDate = date("U");
 	require 'dbh.inc.php';
-	$sql = "SELECT * FROM pwdReset WHERE pwdResetSelector=? AND pwdResetExpires >= ?;";
+	$sql = "SELECT * FROM pwdreset WHERE pwdResetSelector=? AND pwdResetExpires >= ?;";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		echo "There was an error!";
@@ -24,8 +24,8 @@ if (isset($_POST["reset-password-submit"])) {
 	} else{
 		mysqli_stmt_bind_param($stmt, "ss", $selector, $currentDate);
 		mysqli_stmt_execute($stmt);
-		$result = mysqli_stmt_get_results($stmt);
-		if (!$row = mysql_fetch_assoc($result)) {
+		$result = mysqli_stmt_get_result($stmt);
+		if (!$row = mysqli_fetch_assoc($result)) {
 			echo "You need to re-submit your reset request. ";
 			exit();
 		} else {
@@ -36,16 +36,16 @@ if (isset($_POST["reset-password-submit"])) {
 				exit();
 			} elseif ($tokenCheck === true) {
 				$tokenEmail = $row["pwdResetEmail"];
-				$sql ="SELECT * FROM user WHERE emailUsers=?;"; 
+				$sql ="SELECT * FROM users WHERE emailUsers=?;"; 
 				$stmt = mysqli_stmt_init($conn);
 				if (!mysqli_stmt_prepare($stmt, $sql)) {
-					echo "There was an error!";
+					echo "There was an error.";
 					exit();
 				} else{
 					mysqli_stmt_bind_param($stmt, "s",$tokenEmail);
 					mysqli_execute($stmt);
-					$result = mysqli_stmt_get_results($stmt);
-					if (!$row = mysql_fetch_assoc($result)) {
+					$result = mysqli_stmt_get_result($stmt);
+					if (!$row = mysqli_fetch_assoc($result)) {
 						echo "Ther was an error.";
 						exit();
 					} else{
@@ -58,7 +58,7 @@ if (isset($_POST["reset-password-submit"])) {
 							$newPwdHash = password_hash($password, PASSWORD_DEFAULT);
 							mysqli_stmt_bind_param($stmt, "ss",$newPwdHash, $tokenEmail);
 							mysqli_execute($stmt);
-							$sql = "DELETE FROM pwdReset WHERE pwdResetEmail=?";
+							$sql = "DELETE FROM pwdreset WHERE pwdResetEmail=?";
 							$stmt = mysqli_stmt_init($conn);
 							if (!mysqli_stmt_prepare($stmt, $sql)) {
 								echo "There was an error!";
@@ -71,7 +71,9 @@ if (isset($_POST["reset-password-submit"])) {
 						}
 					}
 				}	
-			} 
+			} else{
+				header("Location ../create-new-password.php?token=error");
+			}
 		}
 	}
 }

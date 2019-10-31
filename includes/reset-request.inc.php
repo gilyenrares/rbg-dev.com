@@ -6,24 +6,24 @@ if (isset($_POST['reset-request-submit'])) {
 	//	Token
 	$token = random_bytes(32);
 	// Url for the reset password page
-	$url = "https://rbg-dev.com/forgottenpwd/create-new-password.php?selector=". $selector. "&validator=". bin2hex($token);
+	$url = "https://rbg-dev.com/create-new-password.php?selector=". $selector. "&validator=". bin2hex($token);
 	// Life of token 600 sec or 10 min
 	$expires = date("U") + 600;
 
 	require 'dbh.inc.php';
 	$userEmail = $_POST["email"];
 	//Sql statement to delete any unused token connected to the current user 
-	$sql = "DELETE FROM pwdReset WHERE pwdResetEmail=?";
+	$sql = "DELETE FROM pwdreset WHERE pwdResetEmail=?";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
-		echo "There was an error!";
+		echo "There was an error, on reset";
 		exit();
 	} else{
 		mysqli_stmt_bind_param($stmt, "s", $userEmail);
 		mysqli_stmt_execute($stmt);
 	}
 	// Sql statement that applies a selector, token and expiration date to the user account 
-	$sql = "INSERT INTO pwsReset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
+	$sql = "INSERT INTO pwdreset (pwdResetEmail, pwdResetSelector, pwdResetToken, pwdResetExpires) VALUES (?, ?, ?, ?);";
 	$stmt = mysqli_stmt_init($conn);
 	if (!mysqli_stmt_prepare($stmt, $sql)) {
 		echo "There was an error!";
@@ -34,18 +34,18 @@ if (isset($_POST['reset-request-submit'])) {
 		mysqli_stmt_execute($stmt);
 	}
 	mysqli_stmt_close($stmt);
-	mysql_close();
+	mysqli_close($conn);
 
 	$to = $userEmail;
 	$subject = 'Reset your password for rbg-dev.com';
 
-	$message = '<p>We recieved a password reset request. The link to reset your password is bellow.</p><p>If you did not make this request, you can ignore this email.</p>';
-	$message .= '<p>Here is your password reset link: </br>';
-	$message .= '<a href="'.$url. '">'.$url.'</a></p>';
+	$message = "We recieved a password reset request. The link to reset your password is bellow.\r\n If you did not make this request, you can ignore this email.\r\n";
+	$message .= "Here is your password reset link: \r\n";
+	$message .= $url;
 
-	$headers = "From: No-Reply-RBG<no-reply-rbg@rbg-dev.com>\r\n";
-	$headers .= "Reply-to: <contact_us@rbg-dev.com>\r\n";
-	$headers .= "Content-type: text/html\r\n";
+	$headers = "From: no-reply-rbg@rbg-dev.com\r\n";
+	$headers .= "Reply-to: contact_us@rbg-dev.com\r\n";
+	$headers .= "X-Mailer: PHP/".phpversion();
 
 	mail($to, $subject, $message, $headers);
 	header("Location: ../index.php?reset=success");
