@@ -1,9 +1,5 @@
 <!-- Sign Up Form-->
-
-<!-- <button onclick="document.getElementById('id01').style.display='block'" class="login_button button">Login</button> -->
-
 <div id="signUpForm" class="modal">
-
   <form class="modal-content animate" action="includes/signup.inc.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('signUpForm').style.display='none'" class="close" title="Close Modal">&times;</span>

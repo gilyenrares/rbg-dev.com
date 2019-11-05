@@ -27,17 +27,17 @@
 
 	<!-- Header -->
 <?php
-include 'header.php';
+include 'sections/header.php';
  ?>
 
 	<!-- Hamburger -->
 <?php
-include 'hamburger.php';
+include 'sections/hamburger.php';
  ?>
 
 	<!-- Menu -->
 <?php
-include 'menu.php';
+include 'sections/menu.php';
  ?>
  
 
@@ -84,7 +84,7 @@ include 'menu.php';
 
 	<!-- Footer -->
   <?php
-include 'footer.php';
+include 'sections/footer.php';
    ?>
 
 </div>

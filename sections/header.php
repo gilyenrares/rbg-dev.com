@@ -21,17 +21,17 @@
                               <li class="active"><a href="index.php">Home</a></li>
                               <li><a href="about.php">About us</a></li>
                               <li><a href="services.php">Services</a></li>
-                              <li><a href="forum.php">Forum</a></li>
+                              <li><a href="projects.php">Projects</a></li>
                               <li><a href="contact.php">Contact</a></li>
                             </ul>';
                            break;
 
-                          case 'forum.php':
+                          case 'projects.php':
                             echo ' <ul class="d-flex flex-row align-items-center justify-content-start">
                               <li><a href="index.php">Home</a></li>
                               <li><a href="about.php">About us</a></li>
                               <li><a href="services.php">Services</a></li>
-                              <li class="active"><a href="forum.php">Forum</a></li>
+                              <li class="active"><a href="projects.php">Projects</a></li>
                               <li><a href="contact.php">Contact</a></li>
                             </ul>';
                            break;
@@ -41,7 +41,7 @@
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about.php">About us</a></li>
                             <li class="active"><a href="services.php">Services</a></li>
-                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li><a href="contact.php">Contact</a></li>
                           </ul>';
                            break;
@@ -51,7 +51,7 @@
                             <li><a href="index.php">Home</a></li>
                             <li class="active"><a href="about.php">About us</a></li>
                             <li><a href="services.php">Services</a></li>
-                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li><a href="contact.php">Contact</a></li>
                           </ul>';
                            break;
@@ -61,7 +61,7 @@
                             <li><a href="index.php">Home</a></li>
                             <li><a href="about.php">About us</a></li>
                             <li><a href="services.php">Services</a></li>
-                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li class="active"><a href="contact.php">Contact</a></li>
                           </ul>';
                            break;
@@ -71,7 +71,7 @@
                             <li class="active"><a href="index.php">Home</a></li>
                             <li><a href="about.php">About us</a></li>
                             <li><a href="services.php">Services</a></li>
-                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li><a href="contact.php">Contact</a></li>
                           </ul>';
                            break;
@@ -81,7 +81,7 @@
                             <li class="active"><a href="index.php">Home</a></li>
                             <li><a href="about.php">About us</a></li>
                             <li><a href="services.php">Services</a></li>
-                            <li><a href="forum.php">Forum</a></li>
+                            <li><a href="projects.php">Projects</a></li>
                             <li><a href="contact.php">Contact</a></li>
                           </ul>';
                            break;

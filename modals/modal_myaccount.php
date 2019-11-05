@@ -1,7 +1,5 @@
 <!-- My Acoount -->
-      <?php
-        require 'logout_form.php';
-        ?>
+<?php require 'modal-logout.php';?>
 <div id="modalMyaccount" class="modal">
   <div class="modal-content modal_container animate">
     <div class="imgcontainer">

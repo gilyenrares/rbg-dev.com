@@ -29,22 +29,22 @@
 
 	<!-- Header -->
 <?php
-include 'header.php';
+include 'sections/header.php';
  ?>
 
 	<!-- Hamburger -->
 <?php
-include 'hamburger.php';
+include 'sections/hamburger.php';
  ?>
 
  <!-- Menu -->
 <?php
-include 'menu.php';
+include 'sections/menu.php';
 ?>
 
  <!-- Login Form-->
 <?php
-include 'login_form.php'
+include 'modals/modal-login.php'
   ?>
 
 	<!-- Home -->
@@ -273,7 +273,7 @@ include 'login_form.php'
 
 	<!-- Footer -->
   <?php
-include 'footer.php';
+include 'sections/footer.php';
    ?>
 
 </div>

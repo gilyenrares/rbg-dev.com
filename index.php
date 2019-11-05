@@ -27,17 +27,17 @@
 
 	<!-- Header -->
 <?php
-include 'header.php';
+include 'sections/header.php';
  ?>
 
 	<!-- Hamburger -->
 <?php
-include 'hamburger.php';
+include 'sections/hamburger.php';
  ?>
 
 	<!-- Menu -->
 <?php
-include 'menu.php';
+include 'sections/menu.php';
  ?>
  
 <!-- Home -->
@@ -161,7 +161,7 @@ include 'menu.php';
 			</div>
 				<!-- Testimonials Form -->
 			<?php 
-				include 'testimonial.php'
+				include 'modals/modal-testimonial.php'
 			 ?>
 			<div class="row test_button_row">
 				<div class="col text-center">
@@ -175,7 +175,7 @@ include 'menu.php';
 
 	<!-- Footer -->
   <?php
-include 'footer.php';
+include 'sections/footer.php';
    ?>
 
 </div>

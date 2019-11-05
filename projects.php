@@ -27,27 +27,27 @@
 
 	<!-- Header -->
 <?php
-include 'header.php';
+include 'sections/header.php';
  ?>
 
 	<!-- Hamburger -->
 <?php
-include 'hamburger.php';
+include 'sections/hamburger.php';
  ?>
 
  <!-- Menu -->
 <?php
-include 'menu.php';
+include 'sections/menu.php';
 ?>
 
  <!-- Login Form-->
 <?php
-include 'login_form.php'
+include 'modals/modal-login.php'
   ?>
 
 	<!-- Home -->
 	<div class="home_global">
-		<div class="background_image" style="background-image:url(images/projects_page.jpg)"></div>
+		<div class="background_image" style="background-image:url(images/forum_page.jpg)"></div>
 		<div class="overlay"></div>
 		<div class="home_container">
 			<div class="container">
@@ -205,7 +205,7 @@ include 'login_form.php'
 
 	<!-- Footer -->
   <?php
-include 'footer.php';
+include 'sections/footer.php';
    ?>
 
 </div>
