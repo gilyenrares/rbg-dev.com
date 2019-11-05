@@ -1,9 +1,5 @@
 <!-- Testimonial Form-->
-
-<!-- <button onclick="document.getElementById('id01').style.display='block'" class="login_button button">Login</button> -->
-
 <div id="testimonialForm" class="modal">
-
   <form class="modal-content animate" action="includes/testimonial.inc.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('testimonialForm').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -13,15 +9,15 @@
     <div class="login_container">
       <label for="first_name"><b>First Name</b></label>
       <div class="input_item">
-        <input type="text" name="fn" class="login_input trans_200" placeholder="First Name" required="required">
+        <input type="text" id="first_name" name="fn" class="login_input trans_200" placeholder="First Name" value="<?php if (isset($_SESSION['fn'])) {echo $_SESSION['fn'];} ?>" required="required">
       </div>
       <label for="last_name"><b>Last Name</b></label>
       <div class="input_item">
-        <input type="text" name="ln" class="login_input trans_200" placeholder="Last Name" required="required">
+        <input type="text" id="last_name" name="ln" class="login_input trans_200" placeholder="Last Name" value="<?php if (isset($_SESSION['ln'])) {echo $_SESSION['ln'];} ?>" required="required">
       </div>
       <label for="email"><b>Email</b></label>
       <div class="input_item">
-        <input type="email" name="email" class="login_input trans_200" placeholder="Email" required="required">
+        <input type="email" id="email" name="email" class="login_input trans_200" placeholder="Email" value="<?php if (isset($_SESSION['userEmail'])) {echo $_SESSION['userEmail'];} ?>" required="required">
       </div>
       <label for="rating"><b>Rate Us</b></label>
         <select id="rating" name="rating">

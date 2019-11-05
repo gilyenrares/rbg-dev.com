@@ -18,7 +18,7 @@
 12. Services.......................1193
 13. Timetable......................1239
 14. Extra..........................1367
-15. Forum...........................1404
+15. projects...........................1404
 16. Contact........................1480
 17. Footer.........................1661
 ******************************/
@@ -1675,22 +1675,22 @@ margin-top: 50px;
 }
 
 /*********************************
-15. Forum
+15. projects
 *********************************/
-.forum
+.projects
 {
 	padding-top: 314px;
 	padding-bottom: 100px;
 	overflow: hidden;
 }
 /*<<<<<<<<<<<---OR--->>>>>>>>>>*/
-.forum_specific
+.projects_specific
 {
 	background: #FFFFFF;
 	padding-top: 45px;
 	padding-bottom: 100px;
 }
-.forum_overlay
+.projects_overlay
 {
 	position: absolute;
 	top: -270px;
@@ -1705,11 +1705,11 @@ margin-top: 50px;
 	transform: rotate(-8deg);
 	background: #FFFFFF;
 }
-.forum_row
+.projects_row
 {
 	margin-top: 100px;
 }
-.forum_col
+.projects_col
 {
 	margin-bottom: 49px;
 }
@@ -1731,60 +1731,60 @@ margin-top: 50px;
 	background: #ff0000;
 	content: '';
 }
-.forum_post_image
+.projects_post_image
 {
 	width: 100%;
 }
-.forum_post_image img
+.projects_post_image img
 {
 	max-width: 100%;
 }
-.forum_post_title
+.projects_post_title
 {
 	margin-top: 20px;
 }
-.forum_post_title a
+.projects_post_title a
 {
 	font-size: 24px;
 	font-weight: 400;
 	color: #262626;
 	line-height: 1.1;
 }
-.forum_post_title a:hover
+.projects_post_title a:hover
 {
 	color: #ff0000;
 }
-.forum_post_date
+.projects_post_date
 {
 	margin-top: 4px;
 }
-.forum_post_date a
+.projects_post_date a
 {
 	font-size: 12px;
 	font-weight: 600;
 	text-transform: uppercase;
 	color: #ff0000;
 }
-.forum_post_text
+.projects_post_text
 {
 	margin-top: 22px;
 }
-.forum_post_text p
+.projects_post_text p
 {
 	font-weight: 500;
 	color: #535353;
 }
-.forum_post_link
+.projects_post_link
 {
 	margin-top: 36px;
 }
-.forum_post_link a
+.projects_post_link a
 {
 	font-size: 12px;
 	font-weight: 400;
 	color: #ff0000;
 }
-.forum_button
+.projects_button
 {
 	margin-top: 46px;
 }

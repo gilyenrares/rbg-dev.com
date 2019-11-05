@@ -6,10 +6,10 @@ if (isset($_POST['contact-submit'])) {
   $firstName = $_POST['fn'];
   $lastName = $_POST['ln'];
   $email = $_POST['email'];
-  $message = $_POST['message'];
+  $msg = $_POST['message'];
 
 //Method that checks empty fields and returns the user to contact with the valid info autofilled
-  if (empty($firstName) || empty($lastName) || empty($email) || empty($message)) {
+  if (empty($firstName) || empty($lastName) || empty($email) || empty($msg)) {
     header("Location: ../contact.php?error=emptyfields&fn=".$firstName."&ln=".$lastName."&email=".$email);
     exit();
   }
@@ -33,13 +33,10 @@ if (isset($_POST['contact-submit'])) {
   }
 
     //Method that checks if the message entered is valid and returns the user to contact with the valid info autofilled
-  elseif (!preg_match("/^[a-zA-Z\s]*$/",$message)) {
+  elseif (!preg_match("/^[a-zA-Z\s]*$/",$msg)) {
     header("Location: ../contact.php?error=invalidLastName&fn=".$firstName."&ln=".$lastName."&email=".$email);
     exit();
   }
-
-
-  //Method that checks if the email exists in the database
   else {
     //SQL variable that runs an SQL statement to insert data into the database
     $sql = "INSERT INTO contact (firstName, lastName, email, message) VALUES(?, ?, ?, ?)";
@@ -54,8 +51,20 @@ if (isset($_POST['contact-submit'])) {
     }
     //Method that retrieves the input from users and uploads it to the database
     else {
-      mysqli_stmt_bind_param($stmt,"ssss", $firstName, $lastName, $email, $message);
+      mysqli_stmt_bind_param($stmt,"ssss", $firstName, $lastName, $email, $msg);
       mysqli_stmt_execute($stmt);
+      //Sending an copy of the enquery to the contact-us email
+      $to = "contact_us@rbg-dev.com";
+      $subject = 'Enquery from: '.$email;
+      $message = "Email sent by: \r\n";
+      $message .= $firstName;
+      $message .= $lastName;
+      $message .= "\r\n Email message: \r\n";
+      $message .= $msg;
+      $headers = "From:".$email."\r\n";
+      $headers .= "Reply-to:".$email."\r\n";
+      $headers .= "X-Mailer: PHP/".phpversion();
+      mail($to, $subject, $message, $headers);
       header("Location: ../contact.php?contact-submit=success");
       exit();
     }

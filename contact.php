@@ -104,13 +104,13 @@ include 'login_form.php'
 						<form action="includes/contact.inc.php" method="post" id="contact_form" class="contact_form">
 							<div class="row">
 								<div class="col-lg-6">
-									<div class="input_item"><input type="text" name="fn" class="contact_input trans_200" placeholder="First Name" required="required"></div>
+									<div class="input_item"><input type="text" name="fn" class="contact_input trans_200" placeholder="First Name" value="<?php if (isset($_SESSION['fn'])) {echo $_SESSION['fn'];} ?>" required="required"></div>
 								</div>
 								<div class="col-lg-6">
-									<div class="input_item"><input type="text" name="ln" class="contact_input trans_200" placeholder="Last Name" required="required"></div>
+									<div class="input_item"><input type="text" name="ln" class="contact_input trans_200" placeholder="Last Name" value="<?php if (isset($_SESSION['ln'])) {echo $_SESSION['ln'];} ?>" required="required"></div>
 								</div>
 							</div>
-							<div class="input_item"><input type="email" name="email" class="contact_input trans_200" placeholder="E-mail" required="required"></div>
+							<div class="input_item"><input type="email" name="email" class="contact_input trans_200" placeholder="E-mail" value="<?php if (isset($_SESSION['userEmail'])) {echo $_SESSION['userEmail'];} ?>" required="required"></div>
 							<div class="input_item">
 								<textarea type="text" name="message" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
 							</div>
