@@ -90,11 +90,11 @@
            </nav>
            <!-- Login Form-->
           <?php
-          require 'login_form.php'
+          require 'modals/modal-login.php'
             ?>
             <!-- My account-->
            <?php
-           require 'modal_myaccount.php'
+           require 'modals/modal_myaccount.php'
              ?>
            <?php
            $onclick_myAccount = "document.getElementById('modalMyaccount').style.display='block'";

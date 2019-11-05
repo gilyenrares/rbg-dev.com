@@ -1,8 +1,8 @@
 <!-- Login Form-->
 <!-- <button onclick="document.getElementById('loginForm').style.display='block'" class="login_button button">Login</button> -->
 <?php
-require 'sign_up_form.php';
-require 'modal_resetpassword.php';
+require 'modals/modal-sign-up.php';
+require 'modals/modal_resetpassword.php';
 ?>
 
 <div id="loginForm" class="modal">

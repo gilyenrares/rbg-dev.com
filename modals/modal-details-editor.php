@@ -1,9 +1,5 @@
-<!-- Sign Up Form-->
-
-<!-- <button onclick="document.getElementById('id01').style.display='block'" class="login_button button">Login</button> -->
-
+<!-- Details editor Form-->
 <div id="detailsEditorForm" class="modal">
-
   <form class="modal-content animate" action="includes/signup.inc.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('detailsEditorForm').style.display='none'" class="close" title="Close Modal">&times;</span>
