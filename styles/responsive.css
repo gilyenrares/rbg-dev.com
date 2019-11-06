@@ -109,11 +109,8 @@
 	{
 		margin-top: 28px;
 	}
-	.about_background
+	.slope-overlay
 	{
-		position: relative;
-		bottom: auto;
-		right: auto;
 		margin-top: -50px;
 	}
 	.about_image

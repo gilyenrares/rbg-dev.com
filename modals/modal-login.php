@@ -2,7 +2,7 @@
 <!-- <button onclick="document.getElementById('loginForm').style.display='block'" class="login_button button">Login</button> -->
 <?php
 require 'modal-sign-up.php';
-require 'modal_resetpassword.php';
+require 'modal-reset-password.php';
 ?>
 
 <div id="loginForm" class="modal">

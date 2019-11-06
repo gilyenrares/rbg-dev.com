@@ -91,10 +91,6 @@
 	{
 		display: none;
 	}
-	.box
-	{
-		width: 100%;
-	}
 	.box:not(:last-child)
 	{
 		margin-bottom: 60px;
@@ -165,7 +161,9 @@
 
 @media only screen and (max-width: 991px)
 {
-
+.box {
+	width: 100%;
+}
 }
 
 /************
