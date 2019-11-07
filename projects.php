@@ -18,7 +18,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-149412340-1');
 </script>
 </head>
@@ -45,7 +44,7 @@
 	</div>
 </div>
 </div>
-<!-- projects -->
+<!-- Projects -->
 <div class="container pt-5">
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<div class="col mb-5">
@@ -56,96 +55,47 @@
 		</div>
 		<!-- Boxes -->
 		<div class="col-lg-12 mb-5">
-			<!-- 1st row of boxes -->
-				<div class="row">
-					<div class="col">
-						<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-							<?php $_SESSION['project'] =" " ?>
-							<!-- Box -->
-							<div class="box d-flex flex-column align-items-center justify-content-center">
-	   	                    	<h3>ESEURIBAC.RO</h3>
-	                   			<div class="box_icon"><img src="images/logo-eseuribac.ro.png" alt=""></div>
-	                   			<div class="button"><a href="#data" onclick="<?php $_SESSION['project'] ="eseuribac.ro" ?>">Load Project</a></div>
-	                		</div>
-
-							<!-- Box -->
-	            			<div class="box d-flex flex-column align-items-center justify-content-center">
-	                    		<h3>RBG-DEV.COM</h3>
-	                    		<div class="box_icon"><img src="images/logo-lg.png" style="padding-top: 60px;" alt=""></div>
-	                    		<button class="button"><a href="">Load Project</a></button>
-	                  		</div>
-
-	            			<!-- Box -->
-	            			<div class="box d-flex flex-column align-items-center justify-content-center">
-	            				<?php 
-	            				include 'modals/modal-php.php';
-	            				 ?>
-	                    		<h3>PHP</h3>
-	                    		<div class="box_icon"><img src="images/badge-php.png" alt=""></div>
-	                    		<div class="button">
-									<a href="#php" onclick="document.getElementById('modalPhp').style.display='block'">Find out more</a>
-								</div>
-	                  		</div>
-	                  
-						</div>
-					</div>
-				</div>
-			</div>
-		<div class="card mb-3">	
-			
-
-
-
-
-
-
-  		<img src="images/logo-eseuribac.ro.png" class="card-img ml-auto mr-auto" alt="Logo EseurBac.ro">
-  			<div class="card-body">
-    		<h3><div class="section_title">EseuriBac.ro</div></h3>
-    		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer.</p>
-   		 	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-  			</div>
-  		<ul id="data" class="list-group list-group-flush">
-
-  			<?php 
-  					include 'includes/get-task.inc.php';
-  				
-  					
-  					  				
-  			?>
-  			<div class="card-body"><div class="button ml-auto mr-auto"><a href="#">Visit Website</a></div></div>
-  		</ul>
-  		
-		</div>
-	</div>
-</div>
-<div class="row projects_row">
-				<!-- projects Post -->
-				<!-- <div class="col-xl-4 col-md-6 projects_col">
-					<div class="projects_post">
-						<div class="projects_post_image"><img src="images/img_user.png" alt=""></div>
-						<div class="projects_post_title"><a href="#"> Pellentesque sit amet tellus blandit</a></div>
-						<div class="projects_post_date"><a href="#">june 29, 2018</a></div>
-						<div class="projects_post_text">
-							<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Odio vestibulum est mattis effic iturut.</p>
-						</div>
-						<div class="projects_post_link"><a href="#">Read More</a></div>
-					</div>
-				</div> -->
-
-				
-
-	</div>
+		<!-- 1st row of boxes -->
 			<div class="row">
 				<div class="col">
-					<div class="button ml-auto mr-auto"><a href="#">Load More</a></div>
+					<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+					<!-- Box -->
+						<div class="box d-flex flex-column align-items-center justify-content-center">
+	   	                    <h3>ESEURIBAC.RO</h3>
+	                   		<div class="box_icon"><img src="images/logo-eseuribac.ro.png" alt=""></div>
+	                   		<div class="button"><a data-toggle="collapse" href="#esb" role="button" aria-expanded="false" aria-controls="esb">Load Project</a></div>
+	                	</div>
+						<!-- Box -->
+	            		<div class="box d-flex flex-column align-items-center justify-content-center">
+	                    	<h3>RBG-DEV.COM</h3>
+	                    	<div class="box_icon"><img src="images/logo-lg.png" style="padding-top: 60px;" alt=""></div>
+	                    	<div class="button"><a data-toggle="collapse" href="#rbg" role="button" aria-expanded="false" aria-controls="rbg">Load Project</a></div>
+	                  	</div>	                 
+					</div>
 				</div>
 			</div>
-
-	<!-- Footer -->
-  <?php
-include 'sections/footer.php';
-   ?>
+		</div>
+	<!-- Box hidden content -->
+		<div class="row">
+		    <div class="collapse multi-collapse" id="esb">
+		    	<div class="card card-body">       		
+		  			<!-- <?php require 'includes/esb.inc.php'?> -->  		
+				</div>
+		     </div>
+		</div>
+		<div class="row">
+		    <div class="collapse multi-collapse" id="rbg">
+		      <div class="card card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		      </div>
+		    </div>
+		</div>
+		
+	</div>
+</div>
+<!-- Footer -->
+<?php include 'sections/footer.php'?>
+<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
