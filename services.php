@@ -13,7 +13,7 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/services.css">
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-<link rel="stylesheet" type="text/css" href="styles/services_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149412340-1"></script>
 <script>

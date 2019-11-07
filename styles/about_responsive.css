@@ -91,10 +91,7 @@
 	{
 		display: none;
 	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 60px;
-	}
+	
 	.about_specific
 	{
 		padding-bottom: 0px;

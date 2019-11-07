@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-<link rel="stylesheet" type="text/css" href="styles/projects_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149412340-1"></script>
 <script>
@@ -46,22 +46,66 @@
 </div>
 </div>
 <!-- projects -->
-<div class="container pading-top">
+<div class="container pt-5">
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
-		<div class="col">
+		<div class="col mb-5">
 			<div class="section_title_container">
 			<h2><div class="section_subtitle">welcome to RGB projects</div></h2>
-			<h3><div class="section_title">Projects List</div></h3>
+			<h3><div class="section_title px-3">Projects List</div></h3>
 			</div>
 		</div>
+		<!-- Boxes -->
+		<div class="col-lg-12 mb-5">
+			<!-- 1st row of boxes -->
+				<div class="row">
+					<div class="col">
+						<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+							<?php $_SESSION['project'] =" " ?>
+							<!-- Box -->
+							<div class="box d-flex flex-column align-items-center justify-content-center">
+	   	                    	<h3>ESEURIBAC.RO</h3>
+	                   			<div class="box_icon"><img src="images/logo-eseuribac.ro.png" alt=""></div>
+	                   			<div class="button"><a href="#data" onclick="<?php $_SESSION['project'] ="eseuribac.ro" ?>">Load Project</a></div>
+	                		</div>
+
+							<!-- Box -->
+	            			<div class="box d-flex flex-column align-items-center justify-content-center">
+	                    		<h3>RBG-DEV.COM</h3>
+	                    		<div class="box_icon"><img src="images/logo-lg.png" style="padding-top: 60px;" alt=""></div>
+	                    		<button class="button"><a href="">Load Project</a></button>
+	                  		</div>
+
+	            			<!-- Box -->
+	            			<div class="box d-flex flex-column align-items-center justify-content-center">
+	            				<?php 
+	            				include 'modals/modal-php.php';
+	            				 ?>
+	                    		<h3>PHP</h3>
+	                    		<div class="box_icon"><img src="images/badge-php.png" alt=""></div>
+	                    		<div class="button">
+									<a href="#php" onclick="document.getElementById('modalPhp').style.display='block'">Find out more</a>
+								</div>
+	                  		</div>
+	                  
+						</div>
+					</div>
+				</div>
+			</div>
 		<div class="card mb-3">	
+			
+
+
+
+
+
+
   		<img src="images/logo-eseuribac.ro.png" class="card-img ml-auto mr-auto" alt="Logo EseurBac.ro">
   			<div class="card-body">
     		<h3><div class="section_title">EseuriBac.ro</div></h3>
     		<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer. This content is a little bit longer.</p>
    		 	<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   			</div>
-  		<ul class="list-group list-group-flush">
+  		<ul id="data" class="list-group list-group-flush">
 
   			<?php 
   					include 'includes/get-task.inc.php';

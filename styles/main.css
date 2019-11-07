@@ -756,7 +756,8 @@ section
 {
 	width: calc(100% / 3);
 	padding: 37px;
-  margin-bottom: 60px;
+  border-radius: 2%;
+  margin: 2px;
 }
 .box:first-child
 {
@@ -771,12 +772,12 @@ section
 	background: #ff0000;
 }
 .boxes_container{
-margin-top: 50px;
+
 }
 .box_icon
 {
-	width: 250px;
-	height: 250px;
+	width: 200px;
+  height: 200px;
 	margin-bottom: 40px; 
 }
 .box_icon img

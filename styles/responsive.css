@@ -95,10 +95,7 @@
 	{
 		width: 100%;
 	}
-	.box:not(:last-child)
-	{
-		margin-bottom: 60px;
-	}
+	
 	.boxes_container{
 		margin-top: 0px;
 	}
@@ -128,32 +125,6 @@
 	{
 		max-width: 100%;
 		padding-top: 30px;
-	}
-	.about_content
-	{
-		-webkit-transform: none;
-		-moz-transform: none;
-		-ms-transform: none;
-		-o-transform: none;
-		transform: none;
-	}
-	.test_1
-	{
-		margin-top: 106px;
-		margin-bottom: 82px;
-	}
-	.test_content
-	{
-		padding-left: 25px;
-	}
-	.gallery_slider_container
-	{
-		width: 150%;
-		left: -25%;
-	}
-	.blog_col:not(:last-child)
-	{
-		margin-bottom: 60px;
 	}
 	.footer_nav ul li:not(:last-of-type)
 	{
@@ -189,9 +160,7 @@
 
 @media only screen and (max-width: 991px)
 {
-	.box_flip_front img{
-		max-width: 60%;
-	}
+	
 }
 
 /************
@@ -227,9 +196,7 @@
 
 @media only screen and (max-width: 767px)
 {
-	.box_flip_front img{
-		max-width: 70%;
-	}
+
 	.hamburger_bar
 	{
 		right: calc((100vw - 510px) / 2 - 15px);
@@ -247,14 +214,6 @@
 	.home_button
 	{
 		margin-top: 37px;
-	}
-	.service_col:nth-last-child(n+4)
-	{
-		margin-bottom: 0px;
-	}
-	.service_col:not(:last-child)
-	{
-		margin-bottom: 79px;
 	}
 	.modal-content
 	{

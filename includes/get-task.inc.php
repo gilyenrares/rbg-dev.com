@@ -1,4 +1,14 @@
 <?php 
+if (isset($_SESSION['userId'])) {
+  if ($_SESSION['accType']==='Admin') {
+    $you = $_SESSION['accType'];
+  } else {
+    $you = 'your account doesnt have the clearance';
+  }
+} else {
+  $you = 'you need to be connected first';
+}
+
 
 $projectName = "eseuribac.ro";
 $checked = "checked";
@@ -31,7 +41,14 @@ else {
     	$html.= '<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="'.$row['percentage'];
   		$html.= '" aria-valuemin="0" aria-valuemax="100" style="width:'.$row['percentage'];
   		$html.= '%"></div></div></li>';
-		echo $html;
+      if (($_SESSION['project']==="$projectName")) {
+  echo $html;
   }
+
+
+}
+  mysqli_stmt_close($stmt);
+  mysqli_close($conn);
+  exit();
 }
 

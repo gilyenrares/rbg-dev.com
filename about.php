@@ -12,7 +12,7 @@
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main.css">
-<link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149412340-1"></script>
 <script>
@@ -50,7 +50,7 @@
 <div class="container">
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<div class="col-lg-8">
-			<div class="about_content_specific">
+			<div class="container mb-5">
 				<div class="section_title_container">
 				<h2><div class="section_subtitle">Welcome to RBG</div></h2>
 				<h3><div class="section_title">About <span>RBG</span></div></h3>
@@ -184,12 +184,21 @@
 									<a href="#bootstrap" onclick="document.getElementById('modalBootstrap').style.display='block'">Find out more</a>
 								</div>
 	                  		</div>
+
+	                  		<!-- Box -->
+	            			<div class="box d-flex flex-column align-items-center justify-content-center">
+	            				
+	                    		<h3>RGB Development</h3>
+	                    		<div class="box_icon"><img src="images/img_admin.png" alt=""></div>
+	                    		<div class="button test_button white-text">
+									<a>Coming soon</a>
+								</div>
+	                  		</div>
 	                	</div>
 	              	</div>
 	            </div>
 		</div>
 	</div>
-	<div class="about_background"></div>
 </div>
 <!-- Slope overlay -->
 <div class="slope-overlay"></div>
