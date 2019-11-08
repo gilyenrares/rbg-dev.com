@@ -6,7 +6,7 @@
     </div>
     <div class="login_container extra_text">
       <label for="logout_form"><b><b>You have been successfully Logged Out.</b></b></label>
-      <button class="login_button button" type="submit">Ok</button>
+      <button type="submit">Ok</button>
     </div>
   </form>
 </div>

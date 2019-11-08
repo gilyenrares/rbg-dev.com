@@ -154,6 +154,41 @@ select{
  	border-radius: 4px;
   	background-color: #f1f1f1;
 }
+button
+{
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+	position: relative;
+  background: #b30000;
+	border: solid 1px #FFFFFF;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	color: #FFFFFF;
+	z-index: 1;
+  text-align: center;
+  box-shadow: 0 0 1px 0 #FFFFFF inset, 0 0 1px 0 #FFFFFF;
+}
+button::before
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #ff0000;
+	width: 50%;
+	height: 100%;
+	border-radius: 25px;
+	z-index: -1;
+	content: '';
+	transition: all 200ms ease;
+}
+button:hover::before
+{
+	width: 100%;
+}
 .form-control
 {
 	color: #db5246;
@@ -606,6 +641,21 @@ section
 .card-img {
   width: 20% !important;
 }
+.home_title
+{
+	font-size: 100px;
+	font-weight: 200;
+	color: #fff;
+	line-height: 1.2;
+	margin-top: -9px;
+}
+.home_subtitle
+{
+	font-size: 16px;
+	font-weight: 500;
+	color: #fff;
+	margin-top: -6px;
+}
 
 /*********************************
 5. Home
@@ -698,14 +748,7 @@ section
 {
 	color: #ff0000;
 }
-.home_title
-{
-	font-size: 100px;
-	font-weight: 200;
-	color: #fff;
-	line-height: 1.2;
-	margin-top: -9px;
-}
+
 /*<<<<<<<<<<<---OR--->>>>>>>>>>*/
 .home_title_global
 {
@@ -715,13 +758,7 @@ section
 	line-height: 1.2;
 	margin-top: -9px;
 }
-.home_subtitle
-{
-	font-size: 16px;
-	font-weight: 500;
-	color: #fff;
-	margin-top: -6px;
-}
+
 /*<<<<<<<<<<<---OR--->>>>>>>>>>*/
 .home_subtitle_global
 {
@@ -1716,7 +1753,7 @@ section
 	display: block;
 	width: 100%;
 	background: #262626;
-	padding-top: 96px;
+	
 	border-top: solid 1px #b30000;
 	padding-bottom: 20px;
 }
@@ -1742,7 +1779,7 @@ section
 }
 .footer_nav
 {
-	margin-top: 80px;
+	margin-top: 10px;
 }
 .footer_nav ul li:not(:last-of-type)
 {

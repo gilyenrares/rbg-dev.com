@@ -19,7 +19,7 @@
     <div class="section_subtitle"><?php if(isset($_SESSION['str']) && isset($_SESSION['city']) && isset($_SESSION['pcd'])) {  echo $_SESSION['str'].'</br></br>'. $_SESSION['city']. '</br></br>'. $_SESSION['pcd'];} ?></div>
      <div class="login_container" style="background-color:#f1f1f1">
       <!-- Logout Form-->
-      <div class="button ml-auto mr-auto"><a href="#logout" onclick="MtoL()">Logout</a></div>
+      <button href="#logout" onclick="MtoL()">Logout</button>
     </div>
   </div>
 </div>

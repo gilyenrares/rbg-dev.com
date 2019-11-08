@@ -10,9 +10,9 @@
       <div class="input_item">
         <input type="email" name="email" class="login_input trans_200" placeholder="Email" required="required">
       </div>
-      <button type="submit" name="reset-request-submit" class="login_button button">Reset Password</button>
+      <button type="submit" name="reset-request-submit" >Reset Password</button>
     <div class="login_container" style="background-color:#f1f1f1">
-      <button onclick="document.getElementById('resetPassword').style.display='none'" class="contact_button button">Cancel</button>
+      <button onclick="document.getElementById('resetPassword').style.display='none'">Cancel</button>
     </div>
   </form>
 </div>

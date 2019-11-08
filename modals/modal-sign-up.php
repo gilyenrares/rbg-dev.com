@@ -44,14 +44,14 @@
         <input type="password" name="pwd-repeat" class="login_input trans_200" placeholder="Repeat Password" required="required">
       </div>
 
-      <button type="submit" name="signup-submit" class="login_button button">Sign Up</button>
+      <button type="submit" name="signup-submit">Sign Up</button>
       <label class="box_text">
         <input type="checkbox" name="remember"> I Accept the <a href="#">Terms and Conditions</a>
       </label>
     </div>
 
     <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('signUpForm').style.display='none'" class="contact_button button">Cancel</button>
+      <button type="button" onclick="document.getElementById('signUpForm').style.display='none'">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>

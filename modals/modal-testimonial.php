@@ -31,10 +31,10 @@
       <div class="input_item"> 
         <textarea name="opinion" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
       </div>
-      <button type="submit" name="testimonial-submit" class="login_button button">Submit Opinion</button>
+      <button type="submit" name="testimonial-submit">Submit Opinion</button>
     </div>
     <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('testimonialForm').style.display='none'" class="contact_button button">Cancel</button>
+      <button type="button" onclick="document.getElementById('testimonialForm').style.display='none'">Cancel</button>
     </div>
   </form>
 </div>

@@ -14,7 +14,7 @@
        </article>
      </section>
      <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('modalBootstrap').style.display='none'" class="contact_button button">Close</button>
+      <button type="button" onclick="document.getElementById('modalBootstrap').style.display='none'">Close</button>
       <span class="psw"><a href="https://getbootstrap.com/" target="_blank">More about Bootstrap</a></span>
     </div>
   </div>

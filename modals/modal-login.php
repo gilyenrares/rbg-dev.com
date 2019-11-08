@@ -22,7 +22,7 @@ require 'modal-reset-password.php';
       <div class="input_item">
         <input type="password" name="pwd" class="login_input trans_200" placeholder="Password" required="required">
       </div>
-      <button class="login_button button"type="submit" name="login-submit">Login</button>
+      <button type="submit" name="login-submit">Login</button>
       <label class="box_text">
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
@@ -30,7 +30,7 @@ require 'modal-reset-password.php';
     </div>
 
     <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('loginForm').style.display='none'" class="contact_button button">Cancel</button>
+      <button type="button" onclick="document.getElementById('loginForm').style.display='none'">Cancel</button>
       <span class="psw">Forgot <a href="#forgotPassword" onclick="LtoR()">password?</a></span>
     </div>
   </form>

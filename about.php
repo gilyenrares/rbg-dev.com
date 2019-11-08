@@ -19,7 +19,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-149412340-1');
 </script>
 </head>
@@ -51,12 +50,12 @@
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<div class="col-lg-8">
 			<div class="container mb-5">
-				<div class="section_title_container">
+				<div class="container">
 				<h2><div class="section_subtitle">Welcome to RBG</div></h2>
 				<h3><div class="section_title">About <span>RBG</span></div></h3>
 				</div>
 				<div class="text_highlight">RBG (Rares Beniamin Gilyen) Development is a one-person team.</div>
-				<div class="about_text">
+				<div class="mt-5">
 					<p> On the front end of web development in order to create the overall layout of the website, HTML & CSS are used and combined. Furthermore, JavaScript, more specifically jQuery, is used to animate and smooth out the website design, thus creating a pleasant user experience.</p>
 					<p> On the back end of web development, PHP and MySql are used to bring functionality into the website and sort and store relevant information in databases.</p>
 				</div>
@@ -68,7 +67,7 @@
 			<!-- 1st row of boxes -->
 				<div class="row">
 					<div class="col">
-						<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+						<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
 
 							<!-- Box -->
 							<div class="box d-flex flex-column align-items-center justify-content-center">
@@ -77,9 +76,7 @@
 								 ?>
 	   	                    	<h3>HTML 5</h3>
 	                   			<div class="box_icon"><img src="images/badge-html5.png" alt=""></div>
-	                   			<div class="button test_button">
-									<a href="#html" onclick="document.getElementById('modalHtml').style.display='block'">Find out more</a>
-								</div>
+	                   			<button onclick="document.getElementById('modalHtml').style.display='block'">Find out more</button>
 	                		</div>
 	              
 
@@ -90,9 +87,7 @@
 	            				 ?>
 	                    		<h3>CSS 3</h3>
 	                    		<div class="box_icon"><img src="images/badge-css3.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#css" onclick="document.getElementById('modalCss').style.display='block'">Find out more</a>
-								</div>
+								<button onclick="document.getElementById('modalCss').style.display='block'">Find out more</button>
 	                  		</div>
 
 	            			<!-- Box -->
@@ -102,9 +97,7 @@
 	            				 ?>
 	                    		<h3>PHP</h3>
 	                    		<div class="box_icon"><img src="images/badge-php.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#php" onclick="document.getElementById('modalPhp').style.display='block'">Find out more</a>
-								</div>
+	                    		<button onclick="document.getElementById('modalPhp').style.display='block'">Find out more</button>
 	                  		</div>
 	                  
 						</div>
@@ -114,7 +107,7 @@
 				<!-- 2nd row of boxes -->
 	      		<div class="row">
 					<div class="col">
-						<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+						<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
 
 							<!-- Box -->
 	            			<div class="box d-flex flex-column align-items-center justify-content-center">
@@ -123,9 +116,7 @@
 	            				 ?>
 	                    		<h3>JQuery</h3>
 	                    		<div class="box_icon"><img src="images/badge-jquery.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#jquery" onclick="document.getElementById('modaljQuery').style.display='block'">Find out more</a>
-								</div>
+	                    		<button onclick="document.getElementById('modaljQuery').style.display='block'">Find out more</button>
 	                  		</div>
 
 	            			<!-- Box -->
@@ -135,9 +126,7 @@
 	            				 ?>
 	                    		<h3>Word Press</h3>
 	                    		<div class="box_icon"><img src="images/badge-wordpress.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#wordpress" onclick="document.getElementById('modalWordPress').style.display='block'">Find out more</a>
-								</div>
+	                    		<button onclick="document.getElementById('modalWordPress').style.display='block'">Find out more</button>
 	                  		</div>
 
 				            <!-- Box -->
@@ -147,9 +136,7 @@
 	            				 ?>
 				                <h3>Java Script</h3>
 				                <div class="box_icon"><img src="images/badge-javascript.png" alt=""></div>
-				                <div class="button test_button">
-									<a href="#javascript" onclick="document.getElementById('modalJavaScript').style.display='block'">Find out more</a>
-								</div>
+				                <button onclick="document.getElementById('modalJavaScript').style.display='block'">Find out more</button>
 				            </div>
 	                  
 						</div>
@@ -168,11 +155,8 @@
 	            				 ?>
 	                    		<h3>SQL</h3>
 	                    		<div class="box_icon"><img src="images/badge-sql.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#sql" onclick="document.getElementById('modalSql').style.display='block'">Find out more</a>
-								</div>
+	                    		<button onclick="document.getElementById('modalSql').style.display='block'">Find out more</button>
 	                  		</div>
-
 	            			<!-- Box -->
 	            			<div class="box d-flex flex-column align-items-center justify-content-center">
 	            				<?php 
@@ -180,19 +164,14 @@
 	            				 ?>
 	                    		<h3>Bootstrap</h3>
 	                    		<div class="box_icon"><img src="images/badge-bootstrap.png" alt=""></div>
-	                    		<div class="button test_button">
-									<a href="#bootstrap" onclick="document.getElementById('modalBootstrap').style.display='block'">Find out more</a>
-								</div>
+	                    		<button onclick="document.getElementById('modalBootstrap').style.display='block'">Find out more</button>
 	                  		</div>
-
 	                  		<!-- Box -->
 	            			<div class="box d-flex flex-column align-items-center justify-content-center">
 	            				
 	                    		<h3>RGB Development</h3>
 	                    		<div class="box_icon"><img src="images/img_admin.png" alt=""></div>
-	                    		<div class="button test_button white-text">
-									<a>Coming soon</a>
-								</div>
+	                    		<button>Coming soon</button>
 	                  		</div>
 	                	</div>
 	              	</div>
@@ -208,7 +187,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<div class="section_title_container">
+				<div class="container">
 				<div class="section_subtitle">RBG Development presents</div>
 				<div class="section_title">The One-Man Team</div>
 				</div>

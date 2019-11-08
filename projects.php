@@ -63,34 +63,35 @@
 						<div class="box d-flex flex-column align-items-center justify-content-center">
 	   	                    <h3>ESEURIBAC.RO</h3>
 	                   		<div class="box_icon"><img src="images/logo-eseuribac.ro.png" alt=""></div>
-	                   		<div class="button"><a data-toggle="collapse" href="#esb" role="button" aria-expanded="false" aria-controls="esb">Load Project</a></div>
+	                   		<button data-toggle="collapse" href="#esb" role="button" aria-expanded="false" aria-controls="esb">Load Project</button>
 	                	</div>
 						<!-- Box -->
 	            		<div class="box d-flex flex-column align-items-center justify-content-center">
 	                    	<h3>RBG-DEV.COM</h3>
 	                    	<div class="box_icon"><img src="images/logo-lg.png" style="padding-top: 60px;" alt=""></div>
-	                    	<div class="button"><a data-toggle="collapse" href="#rbg" role="button" aria-expanded="false" aria-controls="rbg">Load Project</a></div>
+	                    	<button data-toggle="collapse" href="#rbg" role="button" aria-expanded="false" aria-controls="rbg">Load Project</button>
 	                  	</div>	                 
 					</div>
 				</div>
 			</div>
 		</div>
 	<!-- Box hidden content -->
-		<div class="row">
-		    <div class="collapse multi-collapse" id="esb">
-		    	<div class="card card-body">       		
-		  			<!-- <?php require 'includes/esb.inc.php'?> -->  		
-				</div>
-		     </div>
+		<div class="col-lg-12 mb-5">
+			<div class="row">
+			    <div class="collapse multi-collapse" id="esb">
+			    	<div class="card card-body">       		
+			  			<?php include 'includes/esb.inc.php'?>	
+					</div>
+			     </div>
+			</div>
+			<div class="row">
+			    <div class="collapse multi-collapse" id="rbg">
+			      <div class="card card-body">
+			        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+			      </div>
+			    </div>
+			</div>
 		</div>
-		<div class="row">
-		    <div class="collapse multi-collapse" id="rbg">
-		      <div class="card card-body">
-		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-		      </div>
-		    </div>
-		</div>
-		
 	</div>
 </div>
 <!-- Footer -->

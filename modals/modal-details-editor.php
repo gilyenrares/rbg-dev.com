@@ -39,14 +39,14 @@
       <div class="input_item">
         <input type="password" name="pwd" class="login_input trans_200" placeholder="Password" required="required">
       </div>
-      <button type="submit" name="editDetails-submit" class="login_button button">Save Changes</button>
+      <button type="submit" name="editDetails-submit">Save Changes</button>
       <label class="box_text">
         <input type="checkbox" name="remember"> I Accept the <a href="#">Terms and Conditions</a>
       </label>
     </div>
 
     <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('detailsEditorForm').style.display='none'" class="contact_button button">Cancel</button>
+      <button type="button" onclick="document.getElementById('detailsEditorForm').style.display='none'">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>

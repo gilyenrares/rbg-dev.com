@@ -14,7 +14,7 @@
        </article>
      </section>
      <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('modalCss').style.display='none'" class="contact_button button">Close</button>
+      <button type="button" onclick="document.getElementById('modalCss').style.display='none'">Close</button>
       <span class="psw"><a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank">More about CSS 3</a></span>
     </div>
   </div>

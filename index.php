@@ -38,7 +38,7 @@
 				<div class="home_content text-center">
              	<h1><div class="home_title">RGB Development</div></h1>
 				<h2><div class="home_subtitle">HTML, CSS, PHP, SQL & More</div></h2>
-              	<div class="button home_button ml-auto mr-auto"><a href="#signup" onclick="document.getElementById('signUpForm').style.display='block'">Join Now</a></div><br><br>
+              	<button class="ml-auto mr-auto" onclick="document.getElementById('signUpForm').style.display='block'">Join Now</button><br><br>
 					<div class="video_link">
 					<a class="vimeo video_button d-flex flex-column align-items-center justify-content-center" href="#">
 						<div class="video_link_content d-flex flex-row align-items-center justify-content-start">
@@ -126,9 +126,7 @@
 			<?php include 'modals/modal-testimonial.php'?>
 			<div class="row test_button_row">
 				<div class="col text-center">
-					<div class="button test_button">
-						<a href="#testimonial" onclick="document.getElementById('testimonialForm').style.display='block'">Enter your opinion</a>
-					</div>
+					<button onclick="document.getElementById('testimonialForm').style.display='block'">Enter your opinion</button>
 				</div>
 			</div>
 	</div>		

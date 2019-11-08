@@ -12,9 +12,9 @@
   $onclick_myAccount = "document.getElementById('modalMyaccount').style.display='block'";
   $onclick_login = "document.getElementById('loginForm').style.display='block'";
  if (isset($_SESSION['userId'])) {
- echo '<div class="button header_button ml-auto mr-auto"><a href="#myAccount" onclick="'.$onclick_myAccount.'">My Account</a></div>';
+ echo '<button class="ml-auto mr-auto" href="#myAccount" onclick="'.$onclick_myAccount.'">My Account</buton>';
  }
  else {
- echo '<div class="button header_button ml-auto mr-auto"><a href="#login" onclick="'.$onclick_login.'">Login</a></div>';
+ echo '<button class="ml-auto mr-auto" href="#login" onclick="'.$onclick_login.'">Login</button>';
  }?>
 </div>

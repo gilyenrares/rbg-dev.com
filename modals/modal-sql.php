@@ -14,7 +14,7 @@
        </article>
      </section>
      <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('modalSql').style.display='none'" class="contact_button button">Close</button>
+      <button type="button" onclick="document.getElementById('modalSql').style.display='none'">Close</button>
       <span class="psw"><a href="https://docs.microsoft.com/en-us/sql/sql-server/sql-server-ver15-release-notes?view=sqlallproducts-allversions" target="_blank">More about Mircosoft Sql</a></span>
     </div>
   </div>

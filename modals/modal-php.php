@@ -15,7 +15,7 @@
        </article>
      </section>
      <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('modalPhp').style.display='none'" class="contact_button button">Close</button>
+      <button type="button" onclick="document.getElementById('modalPhp').style.display='none'">Close</button>
       <span class="psw"><a href="https://www.php.net/manual/en/intro-whatis.php" target="_blank">More about PHP</a></span>
     </div>
   </div>

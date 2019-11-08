@@ -95,7 +95,7 @@
 						<div class="input_item">
 						<textarea type="text" name="message" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
 						</div>
-					<button type="submit" name="contact-submit" class="contact_button button">Send<span></span></button>
+					<button type="submit" name="contact-submit">Send<span></span></button>
 				</form>
 				</div>
 			</div>

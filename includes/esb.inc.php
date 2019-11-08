@@ -1,6 +1,6 @@
 <?php 
 if (isset($_SESSION['userId'])) {
-  if ($_SESSION['accType']==='Admin' || $_SESSION['userEmail']='ursa.cristian98@gmail.com') {
+  if ($_SESSION['accType']==='Admin' || $_SESSION['userEmail']==='ursa.cristian98@gmail.com') {
     $projectName = "eseuribac.ro";
     $checked = "checked";
     require 'dbh.inc.php';
@@ -10,12 +10,12 @@ if (isset($_SESSION['userId'])) {
     $stmt = mysqli_stmt_init($conn);
   //Method that check if the sql can run inside the database without error
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-      $you "cant execute";
+      $you ="cant execute";
     }
   //Method that retrieves the project name and it's details
     else {
-      echo = '<h3 class="section_title">ESEURIBAC.RO</h3>'; 
-      echo = '<p class="card-text">This is the summary of the tasks assigned and the progress of the current project.</p>';
+      echo '<h3 class="section_title">'.$projectName.'</h3>'; 
+      echo '<p class="card-text">This section is a summary of the tasks currently in development, and the progress of each task of the project. Please contact us for further details or concerns.</p>';
       mysqli_stmt_bind_param($stmt,"s", $projectName);
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
@@ -38,17 +38,17 @@ if (isset($_SESSION['userId'])) {
         $html .= '<ul id="data" class="list-group list-group-flush">';
         echo $html;
       }
-      echo '<a class="button" href="https://eseuribac.ro" target="_blank">Visit Website</a></div></div>';    
+      echo '<button class="ml-auto mr-auto mt-3"><a href="https://'.$projectName.'" target="_blank">Visit Website</a></button>';    
     }
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
   }
   else {
-    $you = 'your account doesnt have the clearance';
+    $you = 'Your account does NOT have the clearance to access this project.';
   }
 } 
 else {
-  $you = 'you need to be connected first';
+  $you = 'You need to be logged in as a Customer or Administrator in order to gain access.';
   echo $you;
 }
 
