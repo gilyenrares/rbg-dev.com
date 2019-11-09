@@ -1748,9 +1748,8 @@ section
 17. Footer
 *********************************/
 
-.footer
+footer
 {
-	display: block;
 	width: 100%;
 	background: #262626;
 	

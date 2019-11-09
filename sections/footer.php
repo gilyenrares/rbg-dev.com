@@ -1,4 +1,4 @@
-<footer class="container">
+<footer>
 	<nav class="footer_nav">
 		<ul class="d-flex flex-sm-row flex-column align-items-sm-start align-items-center justify-content-center">
 			<li><a href="index.php">Home</a></li>

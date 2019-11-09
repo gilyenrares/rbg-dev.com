@@ -146,7 +146,7 @@
 				<!-- 3rd row of boxes -->
 	      		<div class="row">
 					<div class="col">
-						<div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+						<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
 
 							<!-- Box -->
 	            			<div class="box d-flex flex-column align-items-center justify-content-center">
