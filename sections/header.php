@@ -75,16 +75,12 @@
           break;
       }?>
       </nav>
-      <?php require 'modals/modal-login.php'?>
-      <?php require 'modals/modal-my-account.php'?>
       <?php
-        $onclick_myAccount = "document.getElementById('modalMyaccount').style.display='block'";
-        $onclick_login = "document.getElementById('loginForm').style.display='block'";
         if (isset($_SESSION['userId'])) {
-          echo '<div class="button header_button ml-auto mr-auto"><a href="#myAccount" onclick="'.$onclick_myAccount.'">My Account</a></div>';
+          echo '<button class="header_button" type="button" data-toggle="modal" data-target="#my-account">My Account</button>';
         }
         else {
-          echo '<div class="button header_button ml-auto mr-auto"><a href="#login" onclick="'.$onclick_login.'">Login</a></div>';
+          echo '<button class="header_button"  type="button" data-toggle="modal" data-target="#login">Login</button>';
         }?>
       </div>
     </div>

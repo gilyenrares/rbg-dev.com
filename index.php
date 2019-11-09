@@ -38,7 +38,7 @@
 				<div class="home_content text-center">
              	<h1><div class="home_title">RGB Development</div></h1>
 				<h2><div class="home_subtitle">HTML, CSS, PHP, SQL & More</div></h2>
-              	<button class="ml-auto mr-auto" onclick="document.getElementById('signUpForm').style.display='block'">Join Now</button><br><br>
+					<button type="button" data-toggle="modal" data-target="#sign-up">Join Us</button>
 					<div class="video_link">
 					<a class="vimeo video_button d-flex flex-column align-items-center justify-content-center" href="#">
 						<div class="video_link_content d-flex flex-row align-items-center justify-content-start">
@@ -58,7 +58,7 @@
 		<div class="col-lg-6">
 			<div class="section_title_container">
 			<h2><div class="section_subtitle">Welcome to RBG Development</div></h2>
-			<h3><div class="section_title">About <span>RBG</span></div></h3>
+			<h3><div class="section_title">About <b>RBG</b></div></h3>
 			</div>
 			<div class="text_highlight">Development of fully working websites.</div>
 			<div class="about_text">
@@ -123,16 +123,18 @@
 				</div>
 			</div>
 		<!-- Testimonials Form -->
-			<?php include 'modals/modal-testimonial.php'?>
 			<div class="row test_button_row">
 				<div class="col text-center">
-					<button onclick="document.getElementById('testimonialForm').style.display='block'">Enter your opinion</button>
+					<button type="button" data-toggle="modal" data-target="#testimonial">Enter Your Opinion</button>
 				</div>
 			</div>
 	</div>		
 </div>
 <!-- Footer -->
- <?php include 'sections/footer.php' ?>
+ <?php 
+ include 'sections/footer.php';
+ include 'modals/modal-testimonial.php';
+  ?>
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

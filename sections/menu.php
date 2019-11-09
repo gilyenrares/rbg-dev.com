@@ -9,12 +9,10 @@
   </ul>
   </div>
 <?php
-  $onclick_myAccount = "document.getElementById('modalMyaccount').style.display='block'";
-  $onclick_login = "document.getElementById('loginForm').style.display='block'";
  if (isset($_SESSION['userId'])) {
- echo '<button class="header_button ml-auto mr-auto" href="#myAccount" onclick="'.$onclick_myAccount.'">My Account</buton>';
- }
- else {
- echo '<button class="header_button ml-auto mr-auto" href="#login" onclick="'.$onclick_login.'">Login</button>';
+   echo '<button class="header_button" type="button" data-toggle="modal" data-target="#my-account">My Account</button>';
+        }
+        else {
+          echo '<button class="header_button"  type="button" data-toggle="modal" data-target="#login">Login</button>';
  }?>
 </div>

@@ -1,59 +1,50 @@
-<!-- Login Form-->
-<!-- <button onclick="document.getElementById('loginForm').style.display='block'" class="login_button button">Login</button> -->
-<?php
-require 'modal-sign-up.php';
-require 'modal-reset-password.php';
-?>
-
-<div id="loginForm" class="modal">
-
-  <form class="modal-content animate" action="includes/login.inc.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('loginForm').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="images/img_user.png" alt="Avatar" class="avatar">
-    </div>
-
-    <div class="login_container">
-      <label for="email"><b>Your Email</b></label>
-      <div class="input_item">
-        <input type="email" name="email" class="login_input trans_200" placeholder="E-mail" required="required">
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="Login Title" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title section_title" id="Login Title">Login</h5>
+        <span type="button" class="close" data-dismiss="modal" aria-label="Close"
+           aria-hidden="true">&times;</span>
       </div>
-      <label for="psw"><b>Password</b></label>
-      <div class="input_item">
-        <input type="password" name="pwd" class="login_input trans_200" placeholder="Password" required="required">
+      <div class="modal-body">
+				<form action="includes/login.inc.php" method="post" id="loginForm">
+				 <div class="imgcontainer">
+					 <img src="images/img_user.png" alt="Avatar" class="avatar">
+				 </div>
+				 <div class="container">
+					 <label for="email"><b>Your Email</b></label>
+					 <div class="input_item">
+						 <input type="email" name="email" class="login_input trans_200" placeholder="E-mail" required="required">
+					 </div>
+					 <label for="psw"><b>Password</b></label>
+					 <div class="input_item">
+						 <input type="password" name="pwd" class="login_input trans_200" placeholder="Password" required="required">
+					 </div>
+					 <label class="box_text">
+						 <input type="checkbox" checked="checked" name="remember"> Remember me
+					 </label>
+					 <span type="button" data-toggle="modal" data-target="#reset-password">Forgot <a href="#reset-password" >password?</a></span>
+				 </div>
+			 </form>
       </div>
-      <button type="submit" name="login-submit">Login</button>
-      <label class="box_text">
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-      <span class="psw">No Account? <a href="#signup" onclick="LtoS()">Create one</a></span>
+      <div>
+				<div class="row d-flex justify-content-around">
+					<div class="col-xs-4 d-flex justify-content-center">
+						<button type="submit" form="loginForm" name="login-submit">Login</button>
+					</div>
+					<div class="col-xs-4 d-flex justify-content-center">
+						<button type="button" data-dismiss="modal">Close</button>
+					</div>
+					<div class="col-xs-4 d-flex justify-content-center">
+						<button type="button" data-toggle="modal" data-target="#sign-up">Create New Account</button>
+					</div>
+				</div>
+      </div>
     </div>
-
-    <div class="login_container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('loginForm').style.display='none'">Cancel</button>
-      <span class="psw">Forgot <a href="#forgotPassword" onclick="LtoR()">password?</a></span>
-    </div>
-  </form>
+  </div>
 </div>
-
-<script>
-//Transition from login to signup
-function LtoS(){
-  document.getElementById('loginForm').style.display='none';
-  document.getElementById('signUpForm').style.display='block';
-}
-//Transition from login to reset password
-function LtoR(){
-  document.getElementById('loginForm').style.display='none';
-  document.getElementById('resetPassword').style.display='block';
-}
-// Get the modal
-var modal = document.getElementById('loginForm');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+<?php
+include 'modal-sign-up.php';
+include 'modal-reset-password.php';
+ ?>
