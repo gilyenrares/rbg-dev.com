@@ -8,7 +8,7 @@
            aria-hidden="true">&times;</span>
       </div>
       <div class="modal-body border-bottom border-warning">
-				<form  action="includes/logout.inc.php" method="post" id="logoutForm">
+				<form action="includes/logout.inc.php" method="post" id="logoutForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
@@ -18,7 +18,7 @@
 			 </form>
       </div>
       <div class=" d-flex justify-content-center">
-          <button type="submit" form="logoutForm" name="logout-submit" data-dismiss="modal">OK</button>
+          <button type="submit" form="logoutForm" name="logout-submit">OK</button>
       </div>
     </div>
   </div>

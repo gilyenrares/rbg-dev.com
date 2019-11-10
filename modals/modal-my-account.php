@@ -8,7 +8,7 @@
            aria-hidden="true">&times;</span>
       </div>
       <div class="modal-body border-bottom border-warning">
-				<form id="myAccountForm">
+				<form action="includes/logout.inc.php" method="post" id="myAccountForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
