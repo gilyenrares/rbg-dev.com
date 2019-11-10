@@ -81,50 +81,48 @@
 				<h2><div class="white-title">Reviews</div></h2>
 				</div>
 			<!-- Testimonial -->
-				<div class="test test_1 d-flex flex-row align-items-start justify-content-start">
-					<div><div class="test_image"><img src="images/img_user.png" alt=""></div></div>
-					<div class="test_content">
+				<div class="mb-5 pt-5 d-flex flex-row align-items-start justify-content-start">
+					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
+					<div class="pl-2">
 						<div class="test_name"><a href="#">Diane Smith</a></div>
 						<div class="test_email">client</div>
 						<div class="test_text">
 						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
 						</div>
-						<div class="rating rating_4 test_rating"><i></i><i></i><i></i><i></i><i></i></div>
+						<div class="rating rating_4 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
 			</div>
 				<div class="col-lg-6">
 			<!-- Testimonial -->
-				<div class="test d-flex flex-row align-items-start justify-content-start">
-					<div><div class="test_image"><img src="images/img_user.png" alt=""></div></div>
-					<div class="test_content">
+				<div class="mb-5 d-flex flex-row align-items-start justify-content-start">
+					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
+					<div class="pl-2">
 						<div class="test_name"><a href="#">Diane Smith</a></div>
 						<div class="test_email">client</div>
 						<div class="test_text">
 							<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
 						</div>
-						<div class="rating rating_4 test_rating"><i></i><i></i><i></i><i></i><i></i></div>
+						<div class="rating rating_4 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
 			<!-- Testimonial -->
-				<div class="test d-flex flex-row align-items-start justify-content-start">
-					<div><div class="test_image"><img src="images/img_user.png" alt=""></div></div>
-					<div class="test_content">
+				<div class="mb-5 d-flex flex-row align-items-start justify-content-start">
+					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
+					<div class="pl-2">
 						<div class="test_name"><a href="#">Diane Smith</a></div>
 						<div class="test_email">client</div>
 						<div class="test_text">
 							<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
 						</div>
-						<div class="rating rating_5 test_rating"><i></i><i></i><i></i><i></i><i></i></div>
+						<div class="rating rating_5 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
 				</div>
 			</div>
 		<!-- Testimonials Form -->
-			<div class="row test_button_row">
-				<div class="col text-center">
-					<button type="button" data-toggle="modal" data-target="#testimonial">Enter Your Opinion</button>
-				</div>
+			<div class="d-flex flex-column align-items-center justify-content-center">				
+				<button type="button" data-toggle="modal" data-target="#testimonial">Enter Your Opinion</button>
 			</div>
 	</div>		
 </div>

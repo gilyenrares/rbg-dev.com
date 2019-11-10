@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col">
       <div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
-      <a href="index.php"><div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RBG<span>Dev</span></div></div></a>
+      <a href="index.php"><div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RBG-<b>Dev</b></div></div></a>
       <nav class="main_nav">
       <?php
         $text=$_SERVER['PHP_SELF'];

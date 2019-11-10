@@ -28,8 +28,6 @@
 <?php include 'sections/hamburger.php'?>
 <!-- Menu -->
 <?php include 'sections/menu.php'?>
-<!-- Login Form-->
-<?php include 'modals/modal-login.php'?>
 <!-- Home -->
 <div class="container-fluid projects-img">
 <div class="overlay"></div>
@@ -49,8 +47,8 @@
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<div class="col mb-5">
 			<div class="section_title_container">
-			<h2><div class="section_subtitle">welcome to RGB projects</div></h2>
-			<h3><div class="section_title px-3">Projects List</div></h3>
+			<h2><div class="red-subtitle">welcome to RGB projects</div></h2>
+			<h3><div class="black-title px-3">Projects List</div></h3>
 			</div>
 		</div>
 		<!-- Boxes -->
@@ -106,6 +104,7 @@
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/colorbox/jquery.colorbox-min.js"></script>
 <script src="js/projects.js"></script>
 </body>
 </html>

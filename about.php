@@ -29,8 +29,6 @@
 <?php include 'sections/hamburger.php';?>
 <!-- Menu -->
 <?php include 'sections/menu.php';?>
-<!-- Login Form-->
-<?php include 'modals/modal-login.php';?>
 <!-- Home -->
 <div class="container-fluid about-t-img">
 <div class="overlay"></div>

@@ -8,7 +8,7 @@
            aria-hidden="true">&times;</span>
       </div>
       <div class="modal-body border-bottom border-warning">
-				<form id="signUpForm">
+				<form id="myAccountForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
@@ -29,7 +29,7 @@
       <div>
 				<div class="row d-flex justify-content-around">
 					<div class="col-xs-6 d-flex justify-content-center">
-						<button type="button" data-toggle="modal" data-target="#logout" form="signUpForm" name="signup-submit">Logout</button>
+						<button type="button" data-toggle="modal" data-target="#logout" form="myAccountForm">Logout</button>
 					</div>
 					<div class="col-xs-6 d-flex justify-content-center">
 						<button type="button" data-dismiss="modal">Close</button>

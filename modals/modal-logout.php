@@ -13,12 +13,12 @@
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
 				 <div class="container">
-           <label for="logout_form"><b><b>You have been successfully Logged Out.</b></b></label>
+           <label for="logout_form"><b>You have been successfully Logged Out.</b></label>
 				 </div>
 			 </form>
       </div>
       <div class=" d-flex justify-content-center">
-          <button type="submit" form="logoutForm" data-dismiss="modal">OK</button>
+          <button type="submit" form="logoutForm" name="logout-submit" data-dismiss="modal">OK</button>
       </div>
     </div>
   </div>

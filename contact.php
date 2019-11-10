@@ -29,8 +29,6 @@
 <?php include 'sections/hamburger.php'?>
 <!-- Menu -->
 <?php include 'sections/menu.php'?>
-<!-- Login Form-->
-<?php include 'modals/modal-login.php'?>
 <!-- Home -->
 <div class="container-fluid contact-img">
 <div class="overlay"></div>
@@ -42,14 +40,14 @@
 </div>
 </div>
 <!-- Contact -->
-<div class="contact">
-	<div class="container">
+	<div class="container pt-5 pb-5">
 		<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<!-- Contact Content -->
 			<div class="col-lg-4">
-				<div class="contact_logo">
-				<div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RGB<span>DEV</span></div></div>
-				</div>
+				<div class="logo d-flex flex-row align-items-center justify-content-start">
+					<img src="images/logo.png" alt="">
+					<div class="text-dark">RGB-<b>Dev</b></div>
+				</div>	
 				<div class="mt-5">
 					<p>Contact RBG Development for any questions, requests or any type of inquiry.</p>
 				</div>
@@ -71,21 +69,21 @@
 				</div>
 			</div>
 		<!-- Contact Form -->
-			<div class="col-lg-8 contact_col">
+			<div class="col-lg-8">
 			<h2 class="text-dark">Contact Form</h2>
 				<div class="container">
-				<form action="includes/contact.inc.php" method="post" id="contact_form" class="contact_form">
+				<form action="includes/contact.inc.php" method="post">
 					<div class="row">
 						<div class="col-lg-6">
-						<div class="input_item"><input type="text" name="fn" class="contact_input trans_200" placeholder="First Name" value="<?php if (isset($_SESSION['fn'])) {echo $_SESSION['fn'];} ?>" required="required"></div>
+						<div class="input_item"><input type="text" name="fn" class="login_input trans_200" placeholder="First Name" value="<?php if (isset($_SESSION['fn'])) {echo $_SESSION['fn'];} ?>" required="required"></div>
 						</div>
 						<div class="col-lg-6">
-						<div class="input_item"><input type="text" name="ln" class="contact_input trans_200" placeholder="Last Name" value="<?php if (isset($_SESSION['ln'])) {echo $_SESSION['ln'];} ?>" required="required"></div>
+						<div class="input_item"><input type="text" name="ln" class="login_input trans_200" placeholder="Last Name" value="<?php if (isset($_SESSION['ln'])) {echo $_SESSION['ln'];} ?>" required="required"></div>
 						</div>
 					</div>
-					<div class="input_item"><input type="email" name="email" class="contact_input trans_200" placeholder="E-mail" value="<?php if (isset($_SESSION['userEmail'])) {echo $_SESSION['userEmail'];} ?>" required="required"></div>
+					<div class="input_item"><input type="email" name="email" class="login_input trans_200" placeholder="E-mail" value="<?php if (isset($_SESSION['userEmail'])) {echo $_SESSION['userEmail'];} ?>" required="required"></div>
 						<div class="input_item">
-						<textarea type="text" name="message" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
+						<textarea type="text" name="message" class="login_input login_textarea trans_200" placeholder="Message" required="required"></textarea>
 						</div>
 					<button type="submit" name="contact-submit">Send<span></span></button>
 				</form>
@@ -119,7 +117,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+
 
  <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

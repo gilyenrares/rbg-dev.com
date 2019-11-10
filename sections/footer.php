@@ -18,7 +18,7 @@
 				</div>
 				<div class="footer_image text-center"><img src="images/footer.png" alt=""></div>
 				<div class="footer_logo">
-					<a href="#"><div class="logo d-flex flex-row align-items-center justify-content-center"><img src="images/logo.png" alt=""><div>RBG<span>DEV</span></div></div></a>
+					<a href="#"><div class="logo d-flex flex-row align-items-center justify-content-center"><img src="images/logo.png" alt=""><div>RBG-<b>Dev</b></div></div></a>
 				</div>
 			</div>
 		</div>
