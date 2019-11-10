@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title section_title" id="Testimonial Title">Your Opinion Matters</h5>
+        <h5 class="modal-title black-title" id="Testimonial Title">Your Review</h5>
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
@@ -26,7 +26,7 @@
              <input type="email" id="email" name="email" class="login_input trans_200" placeholder="Email" value="<?php if (isset($_SESSION['userEmail'])) {echo $_SESSION['userEmail'];} ?>" required="required">
            </div>
            <label for="rating"><b>Rate Us</b></label>
-             <select id="rating" name="rating">
+             <select class="login_input trans_200" id="rating" name="rating">
                <option value="rating_5">5 Stars Rating</option>
                <option value="rating_4">4 Stars Rating</option>
                <option value="rating_3">3 Stars Rating</option>

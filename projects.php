@@ -33,12 +33,12 @@
 <!-- Home -->
 <div class="container-fluid projects-img">
 <div class="overlay"></div>
-<div class="container pading-top">
+<div class="container padding-top">
 	<div class="row">
 		<div class="col">
 			<div class="container">
-			<h1><div class="home_title">Latest Projects</div></h1>
-			<h2><div class="home_subtitle">View the latest projects carried on by RBG Development.</div></h2>
+			<h1><div class="white-title">Latest Projects</div></h1>
+			<h2><div class="white-subtitle">View the latest projects carried on by RBG Development.</div></h2>
 			</div>
 		</div>
 	</div>

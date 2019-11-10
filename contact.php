@@ -34,13 +34,13 @@
 <!-- Home -->
 <div class="container-fluid contact-img">
 <div class="overlay"></div>
-<div class="container pading-top">
+<div class="container padding-top">
 	<div class="container">
 		<div class="row">
 			<div class="container">
 				<div class="home_content">
-				<h1><div class="home_title">Contact</div></h1>
-				<h2><div class="home_subtitle">Contact us for more details</div></h2>
+				<h1><div class="white-title">Contact</div></h1>
+				<h2><div class="white-subtitle">Contact us for more details</div></h2>
 				</div>
 			</div>
 		</div>

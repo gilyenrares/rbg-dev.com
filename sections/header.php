@@ -77,10 +77,10 @@
       </nav>
       <?php
         if (isset($_SESSION['userId'])) {
-          echo '<button class="header_button" type="button" data-toggle="modal" data-target="#my-account">My Account</button>';
+          echo '<button class="ml-5 header_button" type="button" data-toggle="modal" data-target="#my-account">My Account</button>';
         }
         else {
-          echo '<button class="header_button"  type="button" data-toggle="modal" data-target="#login">Login</button>';
+          echo '<button class="ml-5 header_button"  type="button" data-toggle="modal" data-target="#login">Login</button>';
         }?>
       </div>
     </div>

@@ -3,7 +3,7 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title section_title" id="Sign Up Title">Sign Up</h5>
+        <h5 class="modal-title black-title" id="Sign Up Title">Sign Up</h5>
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>

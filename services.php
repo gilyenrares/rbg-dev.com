@@ -34,12 +34,12 @@
 <!-- Home -->
 <div class="container-fluid services-img">
 <div class="overlay"></div>	
-	<div class="container pading-top">
+	<div class="container padding-top">
 		<div class="row">
 			<div class="col">
 				<div class="home_content">
-				<h1><div class="home_title">Services</div></h1>
-				<h2><div class="home_subtitle">Web design, Web development, Security & many more</div></h2>
+				<h1><div class="white-title">Services</div></h1>
+				<h2><div class="white-subtitle">Web design, Web development, Security & many more</div></h2>
 				</div>
 			</div>
 		</div>
@@ -142,7 +142,7 @@
 		</div>		
     <!-- Boxes -->
     	<div class="boxes">
-      		<div class="container pading-top">
+      		<div class="container padding-top">
         		<div class="row">
           			<div class="col">
             			<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">

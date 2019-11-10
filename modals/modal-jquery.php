@@ -3,14 +3,14 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title section_title" id="JQuery Title">JQuery</h5>
+        <h5 class="modal-title black-title" id="JQuery Title">JQuery</h5>
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
       <div class="modal-body">
           <div class="d-flex flex-column justify-content-center">
             <div class="badge"><img src="images/badge-jquery.png" alt="jQuery  Badge"></div>
-            <h1 class="section_title">jQuery</h1>
+            <h1 class="text-dark">jQuery</h1>
           </div>
           <section>
            <article>
