@@ -35,7 +35,7 @@
              </select>
            <label for="opinion"><b>Enter your opinion below</b></label>
            <div class="input_item">
-             <textarea name="opinion" class="contact_input contact_textarea trans_200" placeholder="Message" required="required"></textarea>
+             <textarea name="opinion" class="login_input login_textarea trans_200" placeholder="Message" required="required"></textarea>
            </div>
 				 </div>
 			 </form>

@@ -23,7 +23,7 @@
 					 </div>
 					 <label for="remember"></label>
 						 <input type="checkbox" checked="checked" name="remember"> Remember me
-					 <span type="button" data-toggle="modal" data-target="#reset-password">Forgot <a href="#reset-password" >password?</a></span>
+					 <span data-toggle="modal" data-target="#reset-password">Forgot <a href="#reset-password" >password?</a></span>
 				 </div>
 			 </form>
       </div>

@@ -14,15 +14,15 @@
 				 </div>
 				 <div class="container">
            <label for="email" class="text_highlight"><b>Email:</b></label>
-           <div class="section_subtitle"><?php if(isset($_SESSION['userEmail'])) { echo $_SESSION['userEmail'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['userEmail'])) { echo $_SESSION['userEmail'];} ?></div>
            <label for="name" class="text_highlight"><b>Full Name:</b></label>
-           <div class="section_subtitle"><?php if(isset($_SESSION['fn']) && isset($_SESSION['ln'])) { echo $_SESSION['fn'].' '.$_SESSION['ln'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['fn']) && isset($_SESSION['ln'])) { echo $_SESSION['fn'].' '.$_SESSION['ln'];} ?></div>
            <label for="phone" class="text_highlight"><b>Tel No:</b></label>
-           <div class="section_subtitle"><?php if(isset($_SESSION['tel'])) { echo $_SESSION['tel'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['tel'])) { echo $_SESSION['tel'];} ?></div>
            <label for="account" class="text_highlight"><b>Account Type:</b></label>
-           <div class="section_subtitle"><?php if(isset($_SESSION['accType'])) {  echo $_SESSION['accType'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['accType'])) {  echo $_SESSION['accType'];} ?></div>
            <label for="address" class="text_highlight"><b>Address:</b></label>
-           <div class="section_subtitle"><?php if(isset($_SESSION['str']) && isset($_SESSION['city']) && isset($_SESSION['pcd'])) {  echo $_SESSION['str'].'</br></br>'. $_SESSION['city']. '</br></br>'. $_SESSION['pcd'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['str']) && isset($_SESSION['city']) && isset($_SESSION['pcd'])) {  echo $_SESSION['str'].'</br>'. $_SESSION['city']. '</br>'. $_SESSION['pcd'];} ?></div>
           </div>
 			 </form>
       </div>
