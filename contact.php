@@ -36,14 +36,8 @@
 <div class="overlay"></div>
 <div class="container padding-top">
 	<div class="container">
-		<div class="row">
-			<div class="container">
-				<div class="home_content">
-				<h1><div class="white-title">Contact</div></h1>
-				<h2><div class="white-subtitle">Contact us for more details</div></h2>
-				</div>
-			</div>
-		</div>
+		<h1><div class="white-title">Contact</div></h1>
+		<h2><div class="white-subtitle">Contact us for more details</div></h2>
 	</div>
 </div>
 </div>
@@ -53,14 +47,13 @@
 		<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<!-- Contact Content -->
 			<div class="col-lg-4">
-				<div class="contact_content">
-					<div class="contact_logo">
-					<div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RGB<span>DEV</span></div></div>
-					</div>
-					<div class="contact_text">
+				<div class="contact_logo">
+				<div class="logo d-flex flex-row align-items-center justify-content-start"><img src="images/logo.png" alt=""><div>RGB<span>DEV</span></div></div>
+				</div>
+				<div class="mt-5">
 					<p>Contact RBG Development for any questions, requests or any type of inquiry.</p>
-					</div>
-					<div class="contact_list">
+				</div>
+				<div class="contact_list">
 					<ul>
 						<li class="d-flex flex-row align-items-start justify-content-start">
 							<div><div>A:</div></div>
@@ -75,13 +68,12 @@
 							<div><a href = "mailto: gilyenrares@gmail.com">gilyenrares@gmail.com</a></div>
 						</li>
 					</ul>
-					</div>
 				</div>
 			</div>
 		<!-- Contact Form -->
 			<div class="col-lg-8 contact_col">
-			<div class="contact_title">Contact Form</div>
-				<div class="contact_form_container">
+			<h2 class="text-dark">Contact Form</h2>
+				<div class="container">
 				<form action="includes/contact.inc.php" method="post" id="contact_form" class="contact_form">
 					<div class="row">
 						<div class="col-lg-6">
@@ -128,8 +120,7 @@
 		</div>
 	</div>
 </div>
-<!-- Footer -->
- <?php include 'sections/footer.php'?>
+
  <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -142,4 +133,6 @@
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/contact.js"></script>
 </body>
+<!-- Footer -->
+ <?php include 'sections/footer.php'?>
 </html>

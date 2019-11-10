@@ -14,13 +14,14 @@ if (isset($_SESSION['userId'])) {
     }
   //Method that retrieves the project name and it's details
     else {
-      echo '<h3 class="section_title">'.$projectName.'</h3>'; 
+      echo '<h3 class="black-title">'.$projectName.'</h3>'; 
       echo '<p class="card-text">This section is a summary of the tasks currently in development, and the progress of each task of the project. Please contact us for further details or concerns.</p>';
       mysqli_stmt_bind_param($stmt,"s", $projectName);
       mysqli_stmt_execute($stmt);
       $result = mysqli_stmt_get_result($stmt);
       while(($row = mysqli_fetch_assoc($result))>0) {
-        $html = '<li class="list-group-item float-left">';
+        $html = '<ul id="data" class="list-group list-group-flush">';
+        $html .= '<li class="list-group-item float-left">';
         $html .= $row['projectTask'];
         $html .= '<form class="was-validated float-right"><div class="custom-control custom-checkbox mb-3"><input type="checkbox" class="custom-control-input" id="task'.$row['projectId'].'" required ';
         if ($row['isCompleted']===1) {
@@ -35,10 +36,10 @@ if (isset($_SESSION['userId'])) {
         $html.= '<div class="progress"><div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="'.$row['percentage'];
         $html.= '" aria-valuemin="0" aria-valuemax="100" style="width:'.$row['percentage'];
         $html.= '%"></div></div></li>';
-        $html .= '<ul id="data" class="list-group list-group-flush">';
+        
         echo $html;
       }
-      echo '<button class="ml-auto mr-auto mt-3"><a href="https://'.$projectName.'" target="_blank">Visit Website</a></button>';    
+      echo '</ul><button class="ml-auto mr-auto mt-3"><a href="https://'.$projectName.'" target="_blank">Visit Website</a></button>';    
     }
     mysqli_stmt_close($stmt);
     mysqli_close($conn);

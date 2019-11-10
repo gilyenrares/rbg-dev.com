@@ -1,15 +1,15 @@
 <!-- Modal -->
-<div class="modal fade" id="bootstrap" tabindex="-1" role="dialog" aria-labelledby="Bootstrap Title" aria-hidden="true">
+<div class="modal fade" id="wordpress" tabindex="-1" role="dialog" aria-labelledby="Wordpress Title" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title black-title" id="Bootstrap Title">Bootstrap</h5>
+        <h5 class="modal-title black-title" id="Wordpress Title">Wordpress</h5>
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
-          <div class="d-flex flex-column justify-content-center">
-            <div class="badge"><img src="images/badge-wordpress.png" alt="WordPress Badge"></div>
+      <div class="modal-body border-bottom border-warning">
+          <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-6"><img src="images/badge-wordpress.png" alt="WordPress Badge"></div>
             <h1 class="text-dark">WordPress</h1>
           </div>
           <section>

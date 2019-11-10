@@ -347,11 +347,5 @@
 
 @media only screen and (max-width: 400px)
 {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
+
 }

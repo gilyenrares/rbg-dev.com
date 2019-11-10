@@ -7,13 +7,12 @@
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
+      <div class="modal-body border-bottom border-warning">
 				<form action="includes/signup.inc.php" method="post" id="signUpForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
 				 <div class="container">
-           <div class="login_container">
             <label for="first_name"><b>First Name</b></label>
             <div class="input_item">
               <input type="text" name="fn" class="login_input trans_200" placeholder="First Name" required="required">
@@ -56,7 +55,6 @@
           </div>
 			 </form>
       </div>
-      <div>
 				<div class="row d-flex justify-content-around">
 					<div class="col-xs-6 d-flex justify-content-center">
 						<button type="submit" form="signUpForm" name="signup-submit">Sign Up</button>
@@ -65,8 +63,6 @@
 						<button type="button" data-dismiss="modal">Close</button>
 					</div>
 				</div>
-      </div>
     </div>
   </div>
-</div>
 </div>

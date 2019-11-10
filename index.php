@@ -30,7 +30,7 @@
 <!-- Menu -->
 <?php include 'sections/menu.php'?> 
 <!-- Home -->
-<div class="container-fluid index-img">
+<div class="container-fluid index-t-img">
 <div class="overlay"></div>
 	<div class="container padding-top">
 		<div class="row">
@@ -72,7 +72,7 @@
 <!-- Slope overlay -->
 <div class="slope-overlay"></div>
 <!-- Testimonials -->
-<div class="container-fluid" style="background-image:url(images/testimonials.jpg)">
+<div class="container-fluid index-b-img">
 	<div class="container padding-top">
 		<div class="row">
 			<div class="col-lg-6">

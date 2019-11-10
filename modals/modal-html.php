@@ -7,9 +7,9 @@
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
-          <div class="d-flex flex-column justify-content-center">
-            <div class="badge"><img src="images/badge-html5.png" alt="Html 5 Badge"></div>
+      <div class="modal-body border-bottom border-warning">
+          <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-6"><img src="images/badge-html5.png" alt="Html 5 Badge"></div>
             <h1 class="text-dark">HTML</h1>
           </div>
           <section>

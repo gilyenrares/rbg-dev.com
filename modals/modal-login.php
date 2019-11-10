@@ -7,7 +7,7 @@
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
+      <div class="modal-body border-bottom border-warning">
 				<form action="includes/login.inc.php" method="post" id="loginForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
@@ -21,26 +21,17 @@
 					 <div class="input_item">
 						 <input type="password" name="pwd" class="login_input trans_200" placeholder="Password" required="required">
 					 </div>
-					 <label class="box_text">
+					 <label for="remember"></label>
 						 <input type="checkbox" checked="checked" name="remember"> Remember me
-					 </label>
 					 <span type="button" data-toggle="modal" data-target="#reset-password">Forgot <a href="#reset-password" >password?</a></span>
 				 </div>
 			 </form>
       </div>
-      <div>
-				<div class="row d-flex justify-content-around">
-					<div class="col-xs-4 d-flex justify-content-center">
-						<button type="submit" form="loginForm" name="login-submit">Login</button>
-					</div>
-					<div class="col-xs-4 d-flex justify-content-center">
-						<button type="button" data-dismiss="modal">Close</button>
-					</div>
-					<div class="col-xs-4 d-flex justify-content-center">
-						<button type="button" data-toggle="modal" data-target="#sign-up">Create New Account</button>
-					</div>
-				</div>
-      </div>
+		<div class="row d-flex justify-content-around">
+			<div class="col-xs-4 d-flex justify-content-center"><button type="submit" form="loginForm" name="login-submit">Login</button></div>
+			<div class="col-xs-4 d-flex justify-content-center"><button type="button" data-dismiss="modal">Close</button></div>
+			<div class="col-xs-4 d-flex justify-content-center"><button type="button" data-toggle="modal" data-target="#sign-up">Create New Account</button></div>
+		</div>
     </div>
   </div>
 </div>

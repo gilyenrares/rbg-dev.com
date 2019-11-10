@@ -202,7 +202,7 @@ section
 }
 .close 
 {
-  line-height: 3.5 !important;
+  line-height: inherit !important;
 }
 .clear
 {
@@ -608,17 +608,27 @@ section
 .padding-top {
   padding-top: 300px;
 }
-.index-img {
+.index-t-img {
   background-image: url(../images/index.jpg); 
   height:100vh;
 }
-.about-img {
+.index-b-img {
+	background-image: url(../images/testimonials.jpg);
+}
+.about-t-img {
   background-image: url(../images/about_page.jpg);
   height: 667px;
 }
-.services-img {
+.about-b-img {
+	background-image: url(../images/dark_grey.jpg);
+}
+.services-t-img {
   background-image: url(../images/services.jpg); 
   height: 667px;
+}
+.services-b-img {
+	background-image:url(../images/red_matrix.jpg); 
+	height: 667px;
 }
 .projects-img {
   background-image: url(../images/forum_page.jpg);
@@ -798,9 +808,7 @@ section
 {
 	background: #ff0000;
 }
-.boxes_container{
 
-}
 .box_icon
 {
 	width: 200px;
@@ -1724,7 +1732,6 @@ footer
 {
 	width: 100%;
 	background: #262626;
-	
 	border-top: solid 1px #b30000;
 	padding-bottom: 20px;
 }

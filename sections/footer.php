@@ -13,7 +13,7 @@
 			<div class="col-lg-8 offset-lg-2">
 				<div class="container">
 					<div class="footer_content">										
-					<div class="text-white float-right">Copyright &copy; RBG-Development<script>document.write(new Date().getFullYear());</script></div>
+					<div class="text-white float-right">Copyright &copy; RBG-Development 2019-<script>document.write(new Date().getFullYear());</script></div>
 					</div>
 				</div>
 				<div class="footer_image text-center"><img src="images/footer.png" alt=""></div>

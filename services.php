@@ -32,7 +32,7 @@
 <!-- Login Form-->
 <?php include 'modals/modal-login.php'?>
 <!-- Home -->
-<div class="container-fluid services-img">
+<div class="container-fluid services-t-img">
 <div class="overlay"></div>	
 	<div class="container padding-top">
 		<div class="row">
@@ -50,8 +50,8 @@
 	<div class="row shadow-lg p-3 mb-5 bg-white rounded">
 		<div class="col">
 			<div class="container">
-			<div class="section_subtitle">welcome to RBG Services</div>
-			<div class="section_title">Our List of Services</div>
+			<div class="red-subtitle">welcome to RBG Services</div>
+			<div class="black-title">Our List of Services</div>
 			</div>
 		</div>
 		<div class="row pt-5">
@@ -132,35 +132,32 @@
 </div>
 
 <!-- Service Packs -->
-<div class="container">
-	<div class="row shadow-lg p-3 bg-white rounded">
+<div class="container shadow-lg p-3 bg-white rounded">
+	<div class="row">
 		<div class="col">
-			<div class="section_title_container">
-			<h2><div class="section_subtitle">welcome to RBG</div></h2>
-			<h3 class="text-body"><div class="section_title">Service Packs</div></h3>
-			</div>
-		</div>		
-    <!-- Boxes -->
-    	<div class="boxes">
-      		<div class="container padding-top">
-        		<div class="row">
-          			<div class="col">
-            			<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
-			              <!-- Box -->
-			              <div class="box mb-4 d-flex flex-column align-items-center justify-content-center">
-			                <div class="box_icon"><img src="images/icon.png" alt=""></div>
-			                <div class="box_title">Fully Designed & Developed Website Ready for Upload</div>
-			                <div class="box_text">
-			                  <p>Etiam commodo justo nec aliquam feugiat. Donec a leo eget augue porttitor sollicitudin.</p>
-			                </div>
+		<h2><div class="red-subtitle">welcome to RBG</div></h2>
+		<h3 class="text-body"><div class="black-title">Service Packs</div></h3>	
+		</div>
+	</div>
+    <!-- Boxes -->	
+        <div class="row">
+          	<div class="col">
+            	<div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+			    <!-- Box -->
+			     	<div class="box mb-4 d-flex flex-column align-items-center justify-content-center">
+			        <div class="box_icon"><img src="images/icon.png" alt=""></div>
+			            <div class="box_title">Fully Designed & Developed Website Ready for Upload</div>
+			            <div class="box_text">
+			               	<p>Etiam commodo justo nec aliquam feugiat. Donec a leo eget augue porttitor sollicitudin.</p>
+			             </div>
 			                <div class="box_link_container">
 			                  <a href="#"><div class="box_link d-flex flex-column align-items-center justify-content-center trans_200"><div>+</div></div></a>
 			                </div>
-			              </div>
-			              <!-- Box -->
-			              <div class="box mb-4 d-flex flex-column align-items-center justify-content-center">
-			                <div class="box_icon"><img src="images/icon.png" alt=""></div>
-			                <div class="box_title">Website Design & Development inc PHP & SQL</div>
+			       	</div>
+			    <!-- Box -->
+			        <div class="box mb-4 d-flex flex-column align-items-center justify-content-center">
+			            <div class="box_icon"><img src="images/icon.png" alt=""></div>
+			            <div class="box_title">Website Design & Development inc PHP & SQL</div>
 			                <div class="box_text">
 			                  <p>Donec a leo eget augue porttitor sollicitudin. Morbi sed varius risus, vitae molestie lectus. Donec id hendrerit.</p>
 			                </div>
@@ -181,12 +178,10 @@
 			              </div>
            				</div>
          	 		</div>
-        		</div>
-      		</div>
-		    <div class="container">
-		        <div class="row">
+        </div>
+		<div class="row">
 		          <div class="col">
-		            <div class="boxes_container d-flex flex-lg-row flex-column align-items-start justify-content-start">
+		            <div class="container d-flex flex-lg-row flex-column align-items-start justify-content-start">
 
 		              <!-- Box -->
 		              <div class="box mb-4 d-flex flex-column align-items-center justify-content-center">
@@ -225,14 +220,12 @@
 		              </div>
 		            </div>
 		          </div>
-		        </div>
-		     </div>
-    	</div>
+		</div>
     </div>
 </div>	
 <!-- Slope overlay -->
 <div class="slope-overlay"></div>
-<div class="container-fluid" style="background-image:url(images/red_matrix.jpg); height: 667px;"></div>	
+<div class="container-fluid services-b-img" ></div>	
 <!-- Footer -->
 <?php include 'sections/footer.php'?>
 <!-- Scripts -->

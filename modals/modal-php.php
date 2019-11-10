@@ -7,9 +7,9 @@
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
-          <div class="d-flex flex-column justify-content-center">
-            <div class="badge"><img src="images/badge-php.png" alt="PHP Badge"></div>
+      <div class="modal-body border-bottom border-warning">
+          <div class="row d-flex flex-column justify-content-center align-items-center">
+            <div class="col-md-6"><img src="images/badge-php.png" alt="PHP Badge"></div>
             <h1 class="text-dark">PHP</h1>
           </div>
           <section>

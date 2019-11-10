@@ -7,7 +7,7 @@
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
-      <div class="modal-body">
+      <div class="modal-body border-bottom border-warning">
 				<form action="includes/reset-request.inc.php" method="post" id="resetPasswordForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
