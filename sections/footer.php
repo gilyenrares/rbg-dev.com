@@ -25,7 +25,6 @@
 	</div>
 	<?php 
 		include 'modals/modal-login.php';
-		include 'modals/modal-sign-up.php';
 		include 'modals/modal-my-account.php';
 		 ?>
 </footer>
