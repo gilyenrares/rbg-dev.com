@@ -303,6 +303,9 @@
 	{
 		padding-bottom: 40px;
 	}
+	.footer_nav {
+		margin-top: 70px;
+	}
 	.footer_nav ul li:not(:last-of-type)
 	{
 		margin-right: 0px;
@@ -336,9 +339,11 @@
 13. 479px
 ************/
 
-@media only screen and (max-width: 479px)
+@media only screen and (max-width: 450px)
 {
-
+.footer_nav {
+		margin-top: 0px;
+	}
 }
 
 /************

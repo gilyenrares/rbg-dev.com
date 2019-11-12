@@ -35,6 +35,9 @@
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+html {
+	overflow-x: hidden;
+}
 body
 {
 	font-family: 'Montserrat', sans-serif;
@@ -42,6 +45,8 @@ body
 	font-weight: 400;
 	background: #FFFFFF;
 	color: #a5a5a5;
+	width: 100% !important;
+	overflow-x: hidden !important;
 }
 div
 {
@@ -926,6 +931,8 @@ footer
 }
 .footer_nav
 {
+	z-index: 3;
+	position: relative;
 	margin-top: 10px;
 }
 .footer_nav ul li:not(:last-of-type)
@@ -958,13 +965,14 @@ footer
 	position: absolute;
 	bottom: 0;
 	left: 50%;
+	max-height: 461px;
+	padding-top: 20px;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	width: 100%;
-	padding-right: 90px;
 	z-index: 0;
 }
 .footer_image img

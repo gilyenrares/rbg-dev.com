@@ -121,7 +121,7 @@
 				</div>
 			</div>
 		<!-- Testimonials Form -->
-			<div class="d-flex flex-column align-items-center justify-content-center">				
+			<div class="mb-5 d-flex flex-column align-items-center justify-content-center">				
 				<button type="button" data-toggle="modal" data-target="#testimonial">Enter Your Opinion</button>
 			</div>
 	</div>		

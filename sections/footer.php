@@ -12,13 +12,10 @@
 		<div class="row">
 			<div class="col-lg-8 offset-lg-2">
 				<div class="container">
-					<div class="footer_content">										
-					<div class="text-white float-right">Copyright &copy; RBG-Development 2019-<script>document.write(new Date().getFullYear());</script></div>
+					<div class="footer_content">	
+					<div class="footer_image text-center"><img src="images/footer.png" alt=""></div>									
+					<div class="text-white position-absolute" style="bottom: 0;right: 0;">Copyright &copy; <img src="images/logo.png" height="19" width="38" alt=""> RBG-Development 2019-<script>document.write(new Date().getFullYear());</script></div>
 					</div>
-				</div>
-				<div class="footer_image text-center"><img src="images/footer.png" alt=""></div>
-				<div class="footer_logo">
-					<a href="#"><div class="logo d-flex flex-row align-items-center justify-content-center"><img src="images/logo.png" alt=""><div>RBG-<b>Dev</b></div></div></a>
 				</div>
 			</div>
 		</div>
