@@ -1,6 +1,6 @@
 <?php session_start();?>
 <header class="header">
-<div class="container">
+<div class="container"> 
   <div class="row">
     <div class="col">
       <div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
@@ -86,4 +86,5 @@
     </div>
   </div>
 </div>
+<?php include 'includes/alert-center.inc.php'; ?>
 </header>

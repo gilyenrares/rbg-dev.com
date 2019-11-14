@@ -207,7 +207,7 @@ section
 }
 .close 
 {
-  line-height: inherit !important;
+  font-size: 3rem !important;
 }
 .clear
 {

@@ -28,7 +28,7 @@ if (isset($_POST['contact-submit'])) {
 
   //Method that checks if the Email entered is valid and returns the user to contact with the valid info autofilled
   elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header("Location: ../contact.php?error=invalidemail&fn=".$firstName."&ln=".$lastName);
+    header("Location: ../contact.php?error=invalidEmail&fn=".$firstName."&ln=".$lastName);
     exit();
   }
 

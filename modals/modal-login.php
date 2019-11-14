@@ -15,7 +15,7 @@
 				 <div class="container">
 					 <label for="email"><b>Your Email</b></label>
 					 <div class="input_item">
-						 <input type="email" name="email" class="login_input trans_200" placeholder="E-mail" required="required">
+						 <input type="email" name="email" value="<?php if (isset($_GET['email'])) {echo $_GET['email'];} ?>" class="login_input trans_200" placeholder="E-mail" required="required">
 					 </div>
 					 <label for="psw"><b>Password</b></label>
 					 <div class="input_item">
