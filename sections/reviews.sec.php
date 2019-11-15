@@ -17,7 +17,7 @@
 		    }
 		  //Method that retrieves the project name and it's details
 		    else {
-		    	$top10 =2;
+		    	$top10 =10;
 		      	mysqli_stmt_execute($stmt);
 		     	$result = mysqli_stmt_get_result($stmt);
 		      	while((($row = mysqli_fetch_assoc($result))>0) &&($top10>0)) {
