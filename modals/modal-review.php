@@ -1,14 +1,14 @@
 <!-- Modal -->
-<div class="modal fade" id="testimonial" tabindex="-1" role="dialog" aria-labelledby="Testimonial Title" aria-hidden="true">
+<div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="Review Title" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title black-title" id="Testimonial Title">Your Review</h5>
+        <h5 class="modal-title black-title" id="Review Title">Your Review</h5>
         <span type="button" class="close" data-dismiss="modal" aria-label="Close"
            aria-hidden="true">&times;</span>
       </div>
       <div class="modal-body border-bottom border-warning">
-				<form action="includes/testimonial.inc.php" method="post" id="testimonialForm">
+				<form action="includes/review.inc.php" method="post" id="reviewForm">
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
@@ -43,7 +43,7 @@
       <div>
 				<div class="row d-flex justify-content-around">
 					<div class="col-xs-6 d-flex justify-content-center">
-						<button type="submit" form="testimonialForm" name="testimonial-submit">Submit Opinion</button>
+						<button type="submit" form="reviewForm" name="review-submit">Submit Opinion</button>
 					</div>
 					<div class="col-xs-6 d-flex justify-content-center">
 						<button type="button" data-dismiss="modal">Cancel</button>

@@ -1,5 +1,5 @@
 <?php
-
+define('ROOT_DIR', realpath(__DIR__.'/..'));
 $servername = "localhost";
 $dBEmail = "root";
 $dBPassword = "";

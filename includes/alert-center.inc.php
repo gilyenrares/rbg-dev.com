@@ -37,6 +37,10 @@ if (isset($_GET['error'])) {
 			echo '<div class="col-md-8 ml-auto mr-auto alert alert-danger" role="alert"><span type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</span><h4 class="alert-heading">Error Invalid Email!</h4><p>The email address that you have entered is invalid or contains typos.</p><hr><p class="mb-0">Please double-check the email address and make sure it is the correct one.</p></div>';
 			break;
 
+		case 'invalidTextBox':
+			echo '<div class="col-md-8 ml-auto mr-auto alert alert-danger" role="alert"><span type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</span><h4 class="alert-heading">Error Invalid Text Box!</h4><p>The text that you have entered contains FORBIDDEN characters. List of allowed characters: . , ! ?</p><hr><p class="mb-0">Please double-check the text and make sure it contains only allowed characters .</p></div>';
+			break;
+
 		case 'passwordcheck':
 			echo '<div class="col-md-8 ml-auto mr-auto alert alert-danger" role="alert"><span type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</span><h4 class="alert-heading">Error Password Do Not Macth!</h4><p>The passwords that you have entered DO NOT MATCH.</p><hr><p class="mb-0">Please pay attention when typing your passwords, also check the status of the CapsLock button.</p></div>';
 			break;
@@ -85,8 +89,8 @@ if (isset($_GET['error'])) {
 	if ($_GET['reset']==='success') {
 		echo '<div class="col-md-8 ml-auto mr-auto alert alert-success" role="alert"><span type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</span><h4 class="alert-heading">Password Reset Requested!</h4><p>Your reset password link has been sent to your email box.</p><hr><p class="mb-0">Check your email for further instructions.</p></div>';
 	}
-}elseif(isset($_GET['testimonial'])) {
-	if ($_GET['testimonial']==='success') {
+}elseif(isset($_GET['review'])) {
+	if ($_GET['review']==='success') {
 		echo '<div class="col-md-8 ml-auto mr-auto alert alert-success" role="alert"><span type="button" class="close" data-dismiss="alert" aria-label="Close" aria-hidden="true">&times;</span><h4 class="alert-heading">We Received Your Feedback!</h4><p>Your opinion is important to us. We use your feedback to improve our services and user experience.</p><hr><p class="mb-0">Thank you for your time.--<i> RBG Development</i>.</p></div>';
 	}
 }

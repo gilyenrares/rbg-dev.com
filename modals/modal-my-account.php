@@ -12,17 +12,17 @@
 				 <div class="imgcontainer">
 					 <img src="images/img_user.png" alt="Avatar" class="avatar">
 				 </div>
-				 <div class="container">
+				 <div class="container"><hr>
            <label for="email" class="text_highlight"><b>Email:</b></label>
-           <div class="red-subtitle"><?php if(isset($_SESSION['userEmail'])) { echo $_SESSION['userEmail'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['userEmail'])) { echo $_SESSION['userEmail'];} ?></div><hr>
            <label for="name" class="text_highlight"><b>Full Name:</b></label>
-           <div class="red-subtitle"><?php if(isset($_SESSION['fn']) && isset($_SESSION['ln'])) { echo $_SESSION['fn'].' '.$_SESSION['ln'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['fn']) && isset($_SESSION['ln'])) { echo $_SESSION['fn'].' '.$_SESSION['ln'];} ?></div><hr>
            <label for="phone" class="text_highlight"><b>Tel No:</b></label>
-           <div class="red-subtitle"><?php if(isset($_SESSION['tel'])) { echo $_SESSION['tel'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['tel'])) { echo $_SESSION['tel'];} ?></div><hr>
            <label for="account" class="text_highlight"><b>Account Type:</b></label>
-           <div class="red-subtitle"><?php if(isset($_SESSION['accType'])) {  echo $_SESSION['accType'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['accType'])) {  echo $_SESSION['accType'];} ?></div><hr>
            <label for="address" class="text_highlight"><b>Address:</b></label>
-           <div class="red-subtitle"><?php if(isset($_SESSION['str']) && isset($_SESSION['city']) && isset($_SESSION['pcd'])) {  echo $_SESSION['str'].'</br>'. $_SESSION['city']. '</br>'. $_SESSION['pcd'];} ?></div>
+           <div class="red-subtitle"><?php if(isset($_SESSION['str']) && isset($_SESSION['city']) && isset($_SESSION['pcd'])) {  echo $_SESSION['str'].'</br>'. $_SESSION['city']. '</br>'. $_SESSION['pcd'];} ?></div><hr>
           </div>
 			 </form>
       </div>

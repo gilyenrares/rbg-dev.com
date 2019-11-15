@@ -75,55 +75,9 @@
 <div class="container-fluid index-b-img">
 	<div class="container padding-top">
 		<div class="row">
-			<div class="col-lg-6">
-				<div class="container">
-				<h3><div class="red-subtitle">About RBG from users</div></h3>
-				<h2><div class="white-title">Reviews</div></h2>
-				</div>
-			<!-- Testimonial -->
-				<div class="mb-5 pt-5 d-flex flex-row align-items-start justify-content-start">
-					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
-					<div class="pl-2">
-						<div class="test_name"><a href="#">Diane Smith</a></div>
-						<div class="test_email">client</div>
-						<div class="test_text">
-						<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-						</div>
-						<div class="rating rating_4 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
-					</div>
-				</div>
-			</div>
-				<div class="col-lg-6">
-			<!-- Testimonial -->
-				<div class="mb-5 d-flex flex-row align-items-start justify-content-start">
-					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
-					<div class="pl-2">
-						<div class="test_name"><a href="#">Diane Smith</a></div>
-						<div class="test_email">client</div>
-						<div class="test_text">
-							<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-						</div>
-						<div class="rating rating_4 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
-					</div>
-				</div>
-			<!-- Testimonial -->
-				<div class="mb-5 d-flex flex-row align-items-start justify-content-start">
-					<img class="rounded-circle avatar" src="images/img_user.png" alt="">
-					<div class="pl-2">
-						<div class="test_name"><a href="#">Diane Smith</a></div>
-						<div class="test_email">client</div>
-						<div class="test_text">
-							<p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit. Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul. Etiam nec odio vestibulum est mat tis effic iturut magna.</p>
-						</div>
-						<div class="rating rating_5 mt-3"><i></i><i></i><i></i><i></i><i></i></div>
-					</div>
-				</div>
-				</div>
-			</div>
-		<!-- Testimonials Form -->
-			<div class="mb-5 d-flex flex-column align-items-center justify-content-center">				
-				<button type="button" data-toggle="modal" data-target="#testimonial">Enter Your Opinion</button>
-			</div>
+			<?php include 'sections/reviews.sec.php'?>
+		</div>
+		<?php include 'sections/review-button.sec.php'?>
 	</div>		
 </div>
 <!-- Scripts -->
@@ -143,6 +97,6 @@
 <!-- Footer -->
  <?php 
  include 'sections/footer.php';
- include 'modals/modal-testimonial.php';
+ include 'modals/modal-review.php';
   ?>
 </html>

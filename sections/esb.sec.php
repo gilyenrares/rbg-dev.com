@@ -3,7 +3,7 @@ if (isset($_SESSION['userId'])) {
   if ($_SESSION['accType']==='Admin' || $_SESSION['userEmail']==='ursa.cristian98@gmail.com') {
     $projectName = "eseuribac.ro";
     $checked = "checked";
-    require 'dbh.inc.php';
+    require __DIR__.'/../includes/dbh.inc.php';
   //SQL variable that runs an SQL statement to check the project name
     $sql = "SELECT * FROM projects WHERE projectName=?;";
   //Prepare statement initialization

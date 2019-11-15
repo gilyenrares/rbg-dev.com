@@ -78,7 +78,7 @@
 			<div class="row">
 			    <div class="collapse multi-collapse" id="esb">
 			    	<div class="card card-body">       		
-			  			<?php include 'includes/esb.inc.php'?>	
+			  			<?php include 'sections/esb.sec.php'?>	
 					</div>
 			     </div>
 			</div>
