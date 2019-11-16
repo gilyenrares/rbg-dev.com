@@ -35,7 +35,7 @@ if (isset($_POST['review-submit'])) {
   }
 
     //Method that checks if the Opinion entered is valid and returns the user to review with the valid info autofilled
-  elseif (!preg_match("/^[a-zA-Z\s.,?!]*$/",$opinion)) {
+  elseif (!preg_match("/^[a-zA-Z0-9\s:().,?!]*$/",$opinion)) {
     header("Location: ../index.php?error=invalidTextBox&fn=".$firstName."&ln=".$lastName."&email=".$email."&rating=".$rating);
     exit();
   }

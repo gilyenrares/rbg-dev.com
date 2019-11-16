@@ -39,14 +39,6 @@
              	<h1><div class="white-title">RGB Development</div></h1>
 				<h2><div class="white-subtitle">HTML, CSS, PHP, SQL & More</div></h2>
 					<button type="button" data-toggle="modal" data-target="#sign-up">Join Us</button>
-					<div class="video_link">
-					<a class="vimeo video_button" href="#">
-						<div class="video_link_content d-flex flex-row align-items-center justify-content-start">
-						<div class="video_icon d-flex flex-column align-items-center justify-content-center"><i class="fa fa-play" aria-hidden="true"></i></div>
-						<span class="video_text">Video comming soon</span>
-						</div>
-					</a>
-					</div>
 				</div>
 			</div>
 		</div>
