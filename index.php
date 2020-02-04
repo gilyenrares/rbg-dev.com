@@ -30,7 +30,7 @@
 <!-- Menu -->
 <?php include 'sections/menu.php'?> 
 <!-- Home -->
-<div class="container-fluid index-t-img">
+<div class="container-fluid index-t-img trans-overlay">
 <div class="overlay"></div>
 	<div class="container padding-top">
 		<div class="row">

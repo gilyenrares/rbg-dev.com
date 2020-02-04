@@ -626,11 +626,14 @@ section
 	z-index: 1;
 	box-shadow: 0 0 1px 0 #FFFFFF inset, 0 0 1px 0 #FFFFFF;
 }
+.trans-overlay{
+	background-color: rgba(0, 0, 0, 0.80);
+}
 .slope-overlay
 {
 	width: 100%;
-  height: 300px;
-  margin-top: -300px;
+  	height: 300px;
+  	margin-top: -300px;
 	transform-origin: bottom right;
 	transform: rotate(-8deg);
 	background: #FFFFFF;
@@ -645,16 +648,16 @@ section
 	height: 100%;
 	background: #FFFFFF;
 	content: '';
-  z-index: 1;
+  	z-index: 1;
 }
 .rotate-img
 {
 	transform: rotateX(-30deg);
 }
 .rotate-img img {
-  transform: rotate(-10deg);
-  max-width: 90%;
-  padding: 20px;
+  	transform: rotate(-10deg);
+  	max-width: 90%;
+  	padding: 20px;
 }
 .video_link
 {
@@ -706,8 +709,8 @@ section
 {
 	width: calc(100% / 3);
 	padding: 37px;
-  border-radius: 2%;
-  margin: 2px;
+  	border-radius: 2%;
+  	margin: 2px;
 }
 .box:first-child
 {
@@ -725,7 +728,7 @@ section
 .box_icon
 {
 	width: 200px;
-  height: 200px;
+  	height: 200px;
 	margin-bottom: 40px; 
 }
 .box_icon img
