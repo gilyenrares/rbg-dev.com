@@ -33,8 +33,8 @@ if (isset($_POST['contact-submit'])) {
   }
 
     //Method that checks if the message entered is valid and returns the user to contact with the valid info autofilled
-  elseif (!preg_match("/^[a-zA-Z\s]*$/",$msg)) {
-    header("Location: ../contact.php?error=invalidLastName&fn=".$firstName."&ln=".$lastName."&email=".$email);
+  elseif (!preg_match("/^[a-zA-Z0-9\s:().,?!]*$/",$msg)) {
+    header("Location: ../contact.php?error=invalidTextBox&fn=".$firstName."&ln=".$lastName."&email=".$email);
     exit();
   }
   else {
