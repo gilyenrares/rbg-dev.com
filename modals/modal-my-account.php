@@ -31,6 +31,7 @@
 					<div class="col-xs-6 d-flex justify-content-center">
 						<button type="button" data-toggle="modal" data-target="#logout" form="myAccountForm">Logout</button>
 					</div>
+          <?php include'sections/dashboard-button.sec.php';?>
 					<div class="col-xs-6 d-flex justify-content-center">
 						<button type="button" data-dismiss="modal">Close</button>
 					</div>

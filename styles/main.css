@@ -617,11 +617,11 @@ section
 {
 	position: absolute;
 	left: 0;
-	bottom: -270px;
-	width: 120%;
-	height: 270px;
+	bottom: -40%;
+    width: 150%;
+    height: 40%;
 	background: #FFFFFF;
-	transform-origin: top left;
+	transform-origin: bottom left;
 	transform: rotate(-8deg);
 	z-index: 1;
 	box-shadow: 0 0 1px 0 #FFFFFF inset, 0 0 1px 0 #FFFFFF;

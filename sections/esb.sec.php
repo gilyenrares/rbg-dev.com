@@ -39,7 +39,7 @@ if (isset($_SESSION['userId'])) {
         
         echo $html;
       }
-      echo '</ul><button class="ml-auto mr-auto mt-3"><a href="https://'.$projectName.'" target="_blank">Visit Website</a></button>';    
+      echo '</ul><button class="ml-auto mr-auto mt-3"><a href="https://'.$projectName.'" target="_blank" style="color:#fff">Visit Website</a></button>';    
     }
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
@@ -52,5 +52,3 @@ else {
   $you = 'You need to be logged in as a Customer or Administrator in order to gain access.';
   echo $you;
 }
-
-

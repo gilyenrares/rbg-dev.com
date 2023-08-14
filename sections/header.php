@@ -55,13 +55,10 @@
                   <li class="active"><a href="contact.php">Contact</a></li>
                 </ul>';
           break;
-          case 'signup.php':
+          case 'dashboard.php':
           echo '<ul class="d-flex flex-row align-items-center justify-content-start">
-                 <li class="active"><a href="index.php">Home</a></li>
-                 <li><a href="about.php">About us</a></li>
-                 <li><a href="services.php">Services</a></li>
-                 <li><a href="projects.php">Projects</a></li>
-                 <li><a href="contact.php">Contact</a></li>
+                 <li class="active"><a href="dashbord.php">Dashboard</a></li>
+                 <li><a href="#">Comming soon</a></li>
                 </ul>';
           break;
           default:
