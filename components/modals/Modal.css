@@ -1,0 +1,26 @@
+.modal-content {
+    color: #ffffff;
+}
+.close {
+    color: #ff0000 !important;
+}
+.modal-header {
+    border-bottom: none !important;
+    background-image: url("../../images/top.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.modal-body {
+    background-image: url("../../images/middle.jpg");
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: center center;
+}
+.modal-footer {
+    border-top: none !important;
+    background-image: url("../../images/bottom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
