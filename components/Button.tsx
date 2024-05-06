@@ -2,6 +2,7 @@ import React, { ButtonHTMLAttributes } from 'react'
 import './Button.css';
 
 type ButtonProps = {
+  className: any
   children: any
   type: any
   onClick: React.MouseEventHandler

@@ -24,7 +24,8 @@
 }
 /* btn--custom or backbone */
 .btn--custom {
-	display: inline-block;
+	display: inline-flex;
+	align-items: center;
 	margin: 12px;
 	border-radius: 4px;
 	outline: none;
