@@ -10,6 +10,7 @@ import Button from './Button'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaSquareXTwitter } from 'react-icons/fa6'
+import { footerLinks } from '@/constants'
 
 const Footer = () => {
   return (
@@ -35,44 +36,23 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className='footer-links row-span-12'>
-          <div className='footer-link-items d-flex align-items-center'>
-            <h2>About Us</h2>
-            <Link href='/sign-up'>How it works</Link>
-            <Link href='/'>Testimonials</Link>
-            <Link href='/'>Careers</Link>
-            <Link href='/'>Investors</Link>
-            <Link href='/'>Terms of Service</Link>
-          </div>
-          <div className='footer-link-items d-flex align-items-center'>
-            <h2>Contact Us</h2>
-            <Link href='/'>Contact</Link>
-            <Link href='/'>Support</Link>
-            <Link href='/'>Destinations</Link>
-            <Link href='/'>Sponsorships</Link>
-          </div>
-          <div className='footer-link-items d-flex align-items-center'>
-            <h2>Videos</h2>
-            <Link href='/'>Submit Video</Link>
-            <Link href='/'>Ambassadors</Link>
-            <Link href='/'>Agency</Link>
-            <Link href='/'>Influencer</Link>
-          </div>
-          <div className='footer-link-items d-flex align-items-center'>
-            <h2>Social Media</h2>
-            <Link href='/'>Instagram</Link>
-            <Link href='/'>Facebook</Link>
-            <Link href='/'>Youtube</Link>
-            <Link href='/'>Twitter</Link>
-          </div>
+
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center'>
+          {footerLinks.map((cat) => (
+            <div key={cat.id} className='flex flex-col items-start md: m-4'>
+              <h2 className='mb-4 whitespace-nowrap text-white'>{cat.title}</h2>
+              {cat.links.map((link) => (
+                <Link key={link.title} href={link.url}>{link.title}</Link>
+              ))}
+            </div>))}
         </div>
       </div>
-      <div className='footer row m-0 d-flex align-items-center'>
-        <Link href='/' className='flex text-xl p-3 hover:text-amber-400 text-white'>
+      <footer className='bg-neutral-800 p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center items-center border-t-2 border-red-500 '>
+        <Link href='/' className='flex text-xl p-3 hover:text-amber-400 text-white text-center'>
           <Image className=' inline-block align-top mr-2' src="/logo.png" alt='RBG Logo' height={20} width={50} />
           RBG-DEV
         </Link>
-        <div className="copyright mx-5 text-center flex">
+        <div className=" whitespace-nowrap mx-5 text-center  md:col-span-2 md:order-last lg:col-auto lg:order-none">
           Copyright ©
           <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} />RBG-Development 2019 - 2024
         </div>
@@ -120,7 +100,8 @@ const Footer = () => {
             <FaLinkedin />
           </Link>
         </div>
-      </div>
+      </footer>
+
     </>
   )
 }

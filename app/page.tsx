@@ -1,8 +1,5 @@
-
 import { HeroSection, Jumbotron } from "@/components";
-import { homeObjOne, homeObjTwo } from '../components/data/hero-index';
-import Image from "next/image";
-import { index } from '../components/data/jumbo';
+import { homeObjOne, homeObjTwo, index } from "@/constants";
 
 export default function Home() {
   return (

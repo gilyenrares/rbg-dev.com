@@ -1,14 +1,7 @@
-import React, { ButtonHTMLAttributes } from 'react'
+"use client"
+import React from 'react'
 import './Button.css';
-
-type ButtonProps = {
-  className: any
-  children: any
-  type: any
-  onClick: React.MouseEventHandler
-  buttonStyle: string
-  buttonSize: string
-}
+import { ButtonProps } from '@/types';
 
 const STYLES = ['btn--primary', 'btn--secondary', 'btn--success', 'btn--danger', 'btn--warning', 'btn--info', 'btn--light', 'btn--dark'];
 
