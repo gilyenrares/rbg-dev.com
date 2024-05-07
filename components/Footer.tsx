@@ -39,7 +39,7 @@ const Footer = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center'>
           {footerLinks.map((cat) => (
-            <div key={cat.id} className='flex flex-col items-start md: m-4'>
+            <div key={cat.id} className='flex flex-col items-start m-4'>
               <h2 className='mb-4 whitespace-nowrap text-white'>{cat.title}</h2>
               {cat.links.map((link) => (
                 <Link key={link.title} href={link.url}>{link.title}</Link>
