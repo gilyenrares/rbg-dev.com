@@ -3,21 +3,7 @@ import React from 'react'
 import Button from './Button'
 import Image from 'next/image'
 import './HeroSection.css';
-
-type HeroSectionProps = {
-  hasTop: boolean
-  hasBottom: boolean
-  lightBg: boolean
-  topLine: string
-  headline: string
-  description: any
-  buttonLink: string
-  buttonLabel: string
-  buttonStyle: string
-  img: string
-  alt: string
-  imgStart: boolean
-}
+import { HeroSectionProps } from '@/types';
 
 const HeroSection = ({
   hasTop,
@@ -35,8 +21,8 @@ const HeroSection = ({
 }: HeroSectionProps) => {
   return (
     <>
-      {hasTop ? <div className={lightBg ? 'white-slope' : 'black-slope'}></div> : null}
-      <div className={lightBg ? 'py-40 text-black bg-white' : 'py-40 text-white bg-zinc-900'}>
+      {hasTop ? <div className={lightBg ? 'light-slope' : 'dark-slope'}></div> : null}
+      <div className={lightBg ? 'py-40 text-black lightBg ' : 'py-40 text-white darkBg'}>
         <div className=' container md:container  mx-auto'>
           <div className='flex flex-row  items-center  justify-around '>
             <div className=' basis-2/5' style={{
@@ -63,7 +49,7 @@ const HeroSection = ({
           </div>
         </div>
       </div>
-      {hasBottom ? <div className={lightBg ? 'black-slope' : 'white-slope'}></div> : null}
+      {hasBottom ? <div className={lightBg ? 'inverted-light-slope' : 'inverted-dark-slope'}></div> : null}
     </>
   )
 }

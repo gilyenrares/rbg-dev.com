@@ -39,8 +39,8 @@ const Footer = () => {
 
         <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center'>
           {footerLinks.map((cat) => (
-            <div key={cat.id} className='flex flex-col items-start m-4'>
-              <h2 className='mb-4 whitespace-nowrap text-white'>{cat.title}</h2>
+            <div key={cat.id} className='flex flex-col items-start m-4 text-white'>
+              <h2 className='mb-4 whitespace-nowrap '>{cat.title}</h2>
               {cat.links.map((link) => (
                 <Link key={link.title} href={link.url}>{link.title}</Link>
               ))}
@@ -52,7 +52,7 @@ const Footer = () => {
           <Image className=' inline-block align-top mr-2' src="/logo.png" alt='RBG Logo' height={20} width={50} />
           RBG-DEV
         </Link>
-        <div className=" whitespace-nowrap mx-5 text-center  md:col-span-2 md:order-last lg:col-auto lg:order-none">
+        <div className=" whitespace-nowrap mx-5 text-center  md:col-span-2 md:order-last lg:col-auto lg:order-none text-white">
           Copyright ©
           <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} />RBG-Development 2019 - 2024
         </div>
