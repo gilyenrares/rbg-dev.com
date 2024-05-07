@@ -41,7 +41,7 @@ const Navigation = () => {
           RBG-DEV
         </Link>
         <div className="menu-icon p-2" onClick={handleClick}>
-          {click ? <FaTimes /> : <FaBars />}
+          {click ? <FaTimes className=' text-red-500' /> : <FaBars />}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
