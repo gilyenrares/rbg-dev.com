@@ -1,0 +1,6 @@
+---
+deployment:
+ tasks:
+  - export DEPLOYPATH=/home/rosbnuod/public_html/
+  - /bin/cp app/page $DEPLOYPATH
+  - /bin/cp app/globals.css $DEPLOYPATH
