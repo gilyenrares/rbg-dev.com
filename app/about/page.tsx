@@ -1,4 +1,4 @@
-import { Cards, HeroSection, Jumbotron } from '@/components'
+import { Cards, HeroSection, Jumbotron, Newsletter } from '@/components'
 import { about, aboutCards, aboutObjOne, aboutObjTwo } from '@/constants'
 import React from 'react'
 
@@ -10,6 +10,7 @@ const About = () => {
       <Cards cards={aboutCards} />
       <div className='black-slope'></div>
       <HeroSection {...aboutObjTwo} />
+      <Newsletter />
     </>
   )
 }

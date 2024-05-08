@@ -23,9 +23,9 @@ const HeroSection = ({
     <>
       {hasTop ? <div className={lightBg ? 'light-slope' : 'dark-slope'}></div> : null}
       <div className={lightBg ? 'py-40 text-black lightBg ' : 'py-40 text-white darkBg'}>
-        <div className=' container md:container  mx-auto'>
-          <div className='flex flex-row  items-center  justify-around '>
-            <div className=' basis-2/5' style={{
+        <div className=' container md:container mx-auto'>
+          <div className=' grid md:grid-cols-2 grid-cols-1 items-center'>
+            <div className='flex flex-col items-center' style={{
               order: imgStart === true ? '1' : '0'
             }}>
               <div className='top-line'>{topLine}</div>
@@ -43,8 +43,8 @@ const HeroSection = ({
                 </Button>
               </Link>
             </div>
-            <div className=''>
-              <Image src={img} alt={alt} width={100} height={100} className='max-w-full min-w-64' />
+            <div className='flex flex-col items-center justify-center'>
+              <Image src={img} alt={alt} width={400} height={100} className='max-w-full min-w-64 pt-10' />
             </div>
           </div>
         </div>

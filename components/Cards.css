@@ -3,45 +3,44 @@
 *********************************/
 
 .cards {
-  z-index: 1;
-  margin-top: -70px;
+	z-index: 1;
+	margin-top: -70px;
 }
 .card {
-  height: 100%;
-  padding: 37px;
-  border-radius: 2%;
-  margin: 2px;
+	height: 100%;
+	padding: 37px;
+	border-radius: 2%;
+	margin: 2px;
 }
-
-.card--custom:nth-child(3n + 1) section {
-  background: #910000;
-}
-.card--custom:nth-child(3n + 2) section {
-  background: #a06d00;
-}
-.card--custom:nth-child(3n) section {
-  background: #262626;
+.card--custom {
+	background: radial-gradient(circle, rgba(250, 250, 250, 0.2) 0%, rgba(38, 38, 38, 0.5) 100%);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .card-icon {
-  width: 200px;
-  height: 200px;
-  margin-bottom: 40px;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 40px;
+	max-width: 100%;
 }
 .card-icon img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .card-title {
-  font-size: 24px;
-  font-weight: 400;
-  color: #fff;
-  line-height: 1.2;
+	font-size: 24px;
+	font-weight: 400;
+	color: #fff;
+	line-height: 1.2;
 }
 .card-text {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 .card-text p {
-  text-indent: 3rem;
-  color: #ffffff;
+	text-indent: 3rem;
+	color: #ffffff;
 }

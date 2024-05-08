@@ -6,7 +6,9 @@ import Footer from "./Footer";
 import Pricing from "./Pricing";
 import HeroSection from "./HeroSection";
 import Cards from "./Cards";
+import ContactForm from "./ContactForm";
+import Newsletter from "./Newsletter";
 
 export{
-  Jumbotron, Hero, Button, Navigation, Footer, Pricing, HeroSection, Cards,
+  Jumbotron, Hero, Button, Navigation, Footer, Pricing, HeroSection, Cards, ContactForm, Newsletter
 }

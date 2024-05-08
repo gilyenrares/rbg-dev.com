@@ -1,5 +1,5 @@
-import { HeroSection, Jumbotron } from '@/components'
-import { contact, contactObjOne, contactObjTwo } from '@/constants'
+import { ContactForm, HeroSection, Jumbotron, Newsletter } from '@/components'
+import { contact, contactObjOne, contactObjThree, contactObjTwo } from '@/constants'
 import React from 'react'
 
 const Contact = () => {
@@ -7,9 +7,10 @@ const Contact = () => {
     <>
       <Jumbotron {...contact} />
       <HeroSection {...contactObjOne} />
-      {/* <ContactForm /> */}
+      <ContactForm />
       <HeroSection {...contactObjTwo} />
-
+      <HeroSection {...contactObjThree} />
+      <Newsletter />
     </>
   )
 }

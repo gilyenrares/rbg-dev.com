@@ -34,14 +34,14 @@ const Navigation = () => {
     // }
   }, []);
   return (
-    <header className="w-full top-0 fixed z-10">
-      <nav className='bg-neutral-800 border-b-2 border-red-500 h-20 grid justify-items-center items-center text-xl  navbar--custom'>
+    <header className="w-full top-0 fixed z-10  bg-neutral-800 border-b-2 border-red-500 h-20">
+      <nav className=' container mx-auto grid justify-items-center items-center text-xl  navbar--custom '>
         <Link href='/' className='flex text-xl p-3 hover:text-amber-400 text-white'>
           <Image className=' inline-block align-top mr-2' src="/logo.png" alt='RBG Logo' height={20} width={50} />
           RBG-DEV
         </Link>
         <div className="menu-icon p-2" onClick={handleClick}>
-          {click ? <FaTimes className=' text-red-500' /> : <FaBars />}
+          {click ? <FaTimes className=' text-red-500' /> : <FaBars className=' text-white' />}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">

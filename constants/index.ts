@@ -133,7 +133,7 @@ export const serviceObjOne = {
 };
 
 export const serviceObjTwo = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: '100% SECURE',
@@ -149,7 +149,7 @@ export const serviceObjTwo = {
 };
 
 export const serviceObjThree = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: true,
   topLine: 'EASY SETUP',
@@ -165,7 +165,7 @@ export const serviceObjThree = {
 };
 
 export const serviceObjFour = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: 'DATA ANALYTICS',
@@ -176,7 +176,7 @@ export const serviceObjFour = {
   buttonLabel: 'Get Started',
   buttonStyle: 'btn--primary',
   imgStart: true,
-  img: 'images/svg-8.svg',
+  img: '/images/svg-8.svg',
   alt: 'Vault'
 };
 
@@ -189,51 +189,58 @@ export const projectObjOne = {
   headline: 'Highschool education and forum platform',
   description:
     'We provide worldwide shipping to all countries. If there are any issues, just issue a refund and we will process your request',
+  buttonLink: '/',
   buttonLabel: 'Simulation',
+  buttonStyle: 'btn--primary',
   imgStart: false,
-  img: 'images/svg-4.svg',
+  img: '/images/svg-4.svg',
   alt: 'Credit Card'
 };
 
 export const projectObjTwo = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: true,
   topLine: 'mirasoil.ro',
   headline: 'Shop for lavender natural products',
-  description:
-    'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+  description:'We have you covered no matter where you are located. Over 140 locations worldwide to ensure you have access anytime',
+  buttonLink: '/',
   buttonLabel: 'Learn More',
+  buttonStyle: 'btn--primary',
   imgStart: true,
-  img: 'images/svg-5.svg',
+  img: '/images/svg-5.svg',
   alt: 'Vault'
 };
 
 export const projectObjThree = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: 'toproofersltd.co.uk',
   headline: 'Roofing services website',
   description:
     "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+  buttonLink: '/',
   buttonLabel: 'Start Now',
+  buttonStyle: 'btn--primary',
   imgStart: true,
-  img: 'images/svg-7.svg',
+  img: '/images/svg-7.svg',
   alt: 'Vault'
 };
 
 export const projectObjFour = {
-  hasTop: false,
-  hasBottom: false,
+  hasTop: true,
+  hasBottom: true,
   lightBg: true,
   topLine: 'RBG-DEV.COM',
   headline: 'Every transaction is stored on our secure cloud database',
   description:
     'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
+    buttonLink: '/',
   buttonLabel: 'Sign Up Now',
+  buttonStyle: 'btn--primary',
   imgStart: true,
-  img: 'images/svg-8.svg',
+  img: '/images/svg-8.svg',
   alt: 'Vault'
 };
 
@@ -257,6 +264,22 @@ export const contactObjOne = {
 export const contactObjTwo = {
   hasTop: true,
   hasBottom: true,
+  lightBg: true,
+  topLine: 'SIGN UP TODAY',
+  headline: 'Join today to receive an exclusive offer',
+  description:
+    'Get access to our exclusive diamond card that allows you to  send unlimited transactions without getting charged any fees',
+  buttonLink: '/about',
+  buttonLabel: 'Get Started',
+  buttonStyle: 'btn--primary',
+  imgStart: true,
+  img: 'images/svg-6.svg',
+  alt: 'Credit Card'
+}; 
+
+export const contactObjThree = {
+  hasTop: true,
+  hasBottom: true,
   lightBg: false,
   topLine: 'SIGN UP TODAY',
   headline: 'Join today to receive an exclusive offer',
@@ -269,7 +292,6 @@ export const contactObjTwo = {
   img: 'images/svg-6.svg',
   alt: 'Credit Card'
 };
-
 
 // Cards information constants for different pages 
 // about cards information
@@ -354,7 +376,7 @@ export const servicesCards =[
   { 
     id: 1,
     title: 'Bronze',
-    img: 'images/badge-html5.png',
+    img: '/images/badge-html5.png',
     p1: 'HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts. It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of technologies that allows the building of more diverse and powerful Web sites and applications.',
     p2: 'This set is sometimes called HTML5 & friends and often shortened to just HTML5.',
     url: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
@@ -362,7 +384,7 @@ export const servicesCards =[
   {
     id:2,
       title: 'Silver',
-      img: 'images/badge-css3.png',
+      img: '/images/badge-css3.png',
       p1: 'CSS is the latest evolution of the Cascading Style Sheets language and aims at extending CSS2.1. It brings a lot of long-awaited novelties, like rounded corners, shadows, gradients, transitions or animations, as well as new layouts like multi-columns, flexible box or grid layouts.',
       p2: 'Experimental parts are vendor-prefixed and should either be avoided in production environments, or used with extreme caution as both their syntax and semantics can change in the future.',
       url: 'https://developer.mozilla.org/en-US/docs/Archive/CSS3',
@@ -370,7 +392,7 @@ export const servicesCards =[
   {
     id:3,
       title: 'Gold',
-      img: 'images/badge-php.png',
+      img: '/images/badge-php.png',
       p1: 'PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.',
       p2: 'What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was.',
       p3: 'You can even configure your web server to process all your HTML files with PHP, and then there is really no way that users can tell what you have up your sleeve.',

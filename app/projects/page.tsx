@@ -1,8 +1,17 @@
+import { HeroSection, Jumbotron, Newsletter } from '@/components'
+import { projectObjFour, projectObjOne, projectObjThree, projectObjTwo, projects } from '@/constants'
 import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <>
+      <Jumbotron {...projects} />
+      <HeroSection {...projectObjOne} />
+      <HeroSection {...projectObjTwo} />
+      <HeroSection {...projectObjThree} />
+      <HeroSection {...projectObjFour} />
+      <Newsletter />
+    </>
   )
 }
 

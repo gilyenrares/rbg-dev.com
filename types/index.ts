@@ -4,9 +4,10 @@ export interface ButtonProps{
   className?: any
   children: any
   type?: any
+  name?: string
   onClick?: MouseEventHandler<HTMLButtonElement>
-  buttonStyle: string
-  buttonSize: string
+  buttonStyle?: string
+  buttonSize?: string
 }
 
 export interface HeroSectionProps {

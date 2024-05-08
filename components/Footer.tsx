@@ -6,47 +6,13 @@ import {
   FaYoutube,
   FaLinkedin
 } from 'react-icons/fa'
-import Button from './Button'
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaSquareXTwitter } from 'react-icons/fa6'
-import { footerLinks } from '@/constants'
 
 const Footer = () => {
   return (
     <>
-      <div className='top-slope'></div>
-      <div className='footer-container'>
-        <div className='footer-subscription col-span-12'>
-          <p className='footer-subscription-heading'>
-            Join our exclusive membership to receive the latest news and trends
-          </p>
-          <p className='footer-subscription-text'>
-            You can unsubscribe at any time.
-          </p>
-          <div className='input-areas'>
-            <form>
-              <input
-                className='footer-input'
-                name='email'
-                type='email'
-                placeholder='Your Email'
-              />
-              <Button buttonStyle='btn--outline'>Subscribe</Button>
-            </form>
-          </div>
-        </div>
-
-        <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-center'>
-          {footerLinks.map((cat) => (
-            <div key={cat.id} className='flex flex-col items-start m-4 text-white'>
-              <h2 className='mb-4 whitespace-nowrap '>{cat.title}</h2>
-              {cat.links.map((link) => (
-                <Link key={link.title} href={link.url}>{link.title}</Link>
-              ))}
-            </div>))}
-        </div>
-      </div>
       <footer className='bg-neutral-800 p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center items-center border-t-2 border-red-500 '>
         <Link href='/' className='flex text-xl p-3 hover:text-amber-400 text-white text-center'>
           <Image className=' inline-block align-top mr-2' src="/logo.png" alt='RBG Logo' height={20} width={50} />
