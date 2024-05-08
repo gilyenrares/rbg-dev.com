@@ -43,7 +43,7 @@ const Pricing = () => {
                 <li>3.5% Cash Back</li>
                 <li>$100,000 Limit</li>
               </ul>
-              <Button buttonSize='btn--large' buttonColor='blue'>
+              <Button buttonSize='btn--large' buttonStyle='btn--dark'>
                 Choose Plan
               </Button>
             </div>
@@ -61,7 +61,7 @@ const Pricing = () => {
                 <li>5% Cash Back</li>
                 <li>Unlimited Spending</li>
               </ul>
-              <Button buttonSize='btn--large' buttonColor='primary'>
+              <Button buttonSize='btn--large' buttonStyle='btn--dark'>
                 Choose Plan
               </Button>
             </div>

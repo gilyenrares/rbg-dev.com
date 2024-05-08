@@ -1,0 +1,23 @@
+.img-header {
+	border-bottom: none !important;
+	background-image: url('/images/top.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center bottom;
+	height: 10vh;
+}
+.img-body {
+	background-image: url('/images/middle.jpg');
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-position: center center;
+	height: 72vh;
+}
+.img-footer {
+	border-top: none !important;
+	background-image: url('/images/bottom.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	height: 10vh;
+}

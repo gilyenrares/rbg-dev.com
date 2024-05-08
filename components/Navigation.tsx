@@ -93,27 +93,30 @@ const Navigation = () => {
           </li>
           <li className="nav-btn">
             {button ? (
-              <Button
-                className="flex items-center"
-                buttonStyle="btn--primary "
-                buttonSize="btn--small"
-                onClick={() => setModalShow(true)}
-              >
-                <FaUser className='fill-amber-400 mr-2' /> Account
-              </Button>
+              <Link href={'/account'}>
+                <Button
+                  className="flex items-center"
+                  buttonStyle="btn--primary "
+                  buttonSize="btn--small"
+                  onClick={closeMobileMenu}
+                >
+                  <FaUser className='fill-amber-400 mr-2' /> Account
+                </Button>
+              </Link>
             ) : (
-              <Button
-                className="flex items-center"
-                buttonStyle="btn--primary"
-                buttonSize="btn--small"
-                onClick={() => setModalShow(true)}
-              >
-                <FaUser className='fill-amber-400 mr-2' /> Account
-              </Button>
+              <Link href={'/account'}>
+                <Button
+                  className="flex items-center"
+                  buttonStyle="btn--primary "
+                  buttonSize="btn--small"
+                  onClick={closeMobileMenu}
+                >
+                  <FaUser className='fill-amber-400 mr-2' /> Account
+                </Button>
+              </Link>
             )}
           </li>
         </ul>
-        {/* <AccountModal show={modalShow} onHide={() => setModalShow(false)} /> */}
       </nav>
     </header>
   )

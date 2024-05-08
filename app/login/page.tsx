@@ -1,17 +1,17 @@
 import React from 'react'
 import './page.css'
-import { SignUpForm } from '@/forms'
+import { LoginForm } from '@/forms'
 
-const SignUp = () => {
+const Login = () => {
   return (
     <>
       <div className='img-header h-10'></div>
       <div className=''>
-        <SignUpForm />
+        <LoginForm />
       </div>
       <div className='img-footer h-10'></div>
     </>
   )
 }
 
-export default SignUp
+export default Login

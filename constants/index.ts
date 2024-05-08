@@ -1,3 +1,5 @@
+import { list } from "postcss"
+
 // Jumbotron constants
 export const index = {
     location: 'index',
@@ -454,4 +456,17 @@ export const footerLinks=[
       {title: 'X (Twitter)', url: '/'},
     ],
   },
+]
+
+// Form projects list
+export const formProjectsList =[
+  {
+    title: 'Select Project',
+    options:[
+      {option: 'EseuriBac'},
+      {option: 'EasyFixPM'},
+      {option: 'TopRoofers'},
+      {option: 'MiraSoil'},
+    ],
+  }
 ]

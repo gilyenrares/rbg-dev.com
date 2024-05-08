@@ -8,6 +8,7 @@ export interface ButtonProps{
   onClick?: MouseEventHandler<HTMLButtonElement>
   buttonStyle?: string
   buttonSize?: string
+  checkButtonStyle?: string
 }
 
 export interface HeroSectionProps {

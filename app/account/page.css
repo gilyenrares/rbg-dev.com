@@ -3,7 +3,7 @@
 	background-image: url('/images/top.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center bottom;
 	height: 10vh;
 }
 .img-body {
@@ -18,6 +18,6 @@
 	background-image: url('/images/bottom.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center top;
 	height: 10vh;
 }

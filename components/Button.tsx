@@ -13,11 +13,11 @@ const Button = ({ children,
   onClick,
   buttonStyle,
   buttonSize }: ButtonProps) => {
-  const checkButtonStyle = STYLES.includes(buttonStyle)
+  const checkButtonStyle: any = STYLES.includes(buttonStyle!)
     ? buttonStyle
     : STYLES[0];
 
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkButtonSize = SIZES.includes(buttonSize!) ? buttonSize : SIZES[0];
   return (
     <button
       className={`btn--custom ${checkButtonStyle} ${checkButtonSize} `}
