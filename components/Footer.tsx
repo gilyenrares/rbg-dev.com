@@ -13,16 +13,16 @@ import { FaSquareXTwitter } from 'react-icons/fa6'
 const Footer = () => {
   return (
     <>
-      <footer className='bg-neutral-800 p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center items-center border-t-2 border-red-500 '>
-        <Link href='/' className='flex text-xl p-3 hover:text-amber-400 text-white text-center'>
+      <footer className='bg-neutral-800 p-10 grid grid-cols-1 md:grid-cols-6 gap-10 justify-items-center items-center mx-auto border-t-2 border-red-500 '>
+        <Link href='/' className='flex md:col-span-2 text-xl p-3 hover:text-amber-400 text-white text-center'>
           <Image className=' inline-block align-top mr-2' src="/logo.png" alt='RBG Logo' height={20} width={50} />
           RBG-DEV
         </Link>
-        <div className=" whitespace-nowrap mx-5 text-center  md:col-span-2 md:order-last lg:col-auto lg:order-none text-white">
-          Copyright ©
-          <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} />RBG-Development 2019 - 2024
+        <div className=" mx-5 text-center md:col-span-2 text-white">
+          <div className=' whitespace-nowrap'>Copyright ©</div>
+          <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} /><div className=' whitespace-nowrap'>RBG-Development 2019-2024</div>
         </div>
-        <div className='social-icons col mx-5'>
+        <div className='social-icons md:col-span-2 col mx-5'>
           <Link
             className='text-2xl text-white hover:text-blue-700'
             href='/'
