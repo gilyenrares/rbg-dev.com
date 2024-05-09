@@ -1,5 +1,6 @@
-import { ContactForm, HeroSection, Jumbotron, Newsletter } from '@/components'
+import { HeroSection, Jumbotron, Newsletter } from '@/components'
 import { contact, contactObjOne, contactObjThree, contactObjTwo } from '@/constants'
+import { ContactForm } from '@/forms'
 import React from 'react'
 
 const Contact = () => {
