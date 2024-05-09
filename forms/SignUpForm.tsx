@@ -250,9 +250,11 @@ function SignUpForm() {
         </div>
       </div>
 
-      <div className="mt-6 flex items-center justify-end gap-x-6">
-        <Link href={'/'}><Button buttonStyle='btn--danger' >Cancel</Button></Link>
-        <Button type={'submit'} name='sign-up-request' buttonStyle='btn--success' >Sign Up</Button>
+      <div className="mt-6 flex items-center justify-center sm:justify-end gap-x-6">
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
+          <Link href={'/'}><Button buttonStyle='btn--danger' >Cancel</Button></Link>
+          <Button type={'submit'} name='sign-up-request' buttonStyle='btn--success' >Sign Up</Button>
+        </div>
       </div>
     </form>
   )
