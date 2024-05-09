@@ -8,7 +8,9 @@ const STYLES = ['btn--primary', 'btn--secondary', 'btn--success', 'btn--danger',
 const SIZES = ['btn--small', 'btn--medium', 'btn--large', 'btn--wide'];
 
 
-const Button = ({ children,
+const Button = ({
+  className,
+  children,
   type,
   onClick,
   buttonStyle,
@@ -20,7 +22,7 @@ const Button = ({ children,
   const checkButtonSize = SIZES.includes(buttonSize!) ? buttonSize : SIZES[0];
   return (
     <button
-      className={`btn--custom ${checkButtonStyle} ${checkButtonSize} `}
+      className={`btn--custom ${checkButtonStyle} ${checkButtonSize} ${className} `}
       onClick={onClick}
       type={type}
     ><span></span>

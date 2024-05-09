@@ -5,8 +5,8 @@ import Link from 'next/link'
 
 const LoginForm = () => {
   return (
-    <form className='form--custom my-10 p-10 justify-center mx-auto md:container container text-white'>
-      <div className="space-y-12">
+    <form className='form--custom justify-center my-10 p-10  mx-auto md:container container text-white'>
+      <div className="space-y-12 ">
         <div className="border-b border-gray-900/10 pb-12">
           <h2 className="text-lg font-semibold leading-7 text-white">Login Page</h2>
           <p className="mt-1 text-sm leading-6 text-gray-200">
@@ -87,9 +87,11 @@ const LoginForm = () => {
         </div>
       </div>
 
-      <div className="mt-6 flex items-center justify-end gap-x-6">
-        <Link href={'/'}><Button buttonStyle='btn--danger' >Cancel</Button></Link>
-        <Button type={'submit'} name={'login-request'} buttonStyle='btn--success' >Login</Button>
+      <div className="mt-6 flex items-center justify-center sm:justify-end gap-x-6">
+        <div className='grid grid-cols-1 sm:grid-cols-2'>
+          <Link href={'/'}><Button buttonStyle='btn--danger' >Cancel</Button></Link>
+          <Button type={'submit'} name={'login-request'} buttonStyle='btn--success' buttonSize='btn--small'>Login</Button>
+        </div>
       </div>
     </form>
   )
