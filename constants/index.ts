@@ -1,44 +1,43 @@
-import { list } from "postcss"
 
 // Jumbotron constants
 export const index = {
     location: 'index',
     title: 'RBG Development',
-    subtitle: 'HTML, CSS, PHP, SQL & More',
-    url: '/sign-up',
-    button: 'Join',
-    btnStyle: 'btn--primary',
+    subtitle: 'NextJs, React, JavaScript, Php, Sql, Tailwind & More',
+    url: '/about',
+    button: 'More',
+    btnStyle: 'btn--info',
 }
 export const about = {
     location: 'about',
     title: 'About RBG',
-    subtitle: 'Development, responsiveness, vision & more.',
+    subtitle: 'Development, Maintenance , Features,  Vision & more.',
     url: '/projects',
-    button: 'Projects',
-    btnStyle: 'btn--info',
+    button: 'Examples',
+    btnStyle: 'btn--warning',
 }
 export const services = {
     location: 'services',
-    title: 'Services',
-    subtitle: 'Web design, Web development, Security & many more',
-    url: '/projects',
-    button: 'Projects',
-    btnStyle: 'btn--info',
+    title: 'Our Web Services',
+    subtitle: 'Design, Development, Maintenance, Security & more',
+    url: '/contact',
+    button: 'Contact Us',
+    btnStyle: 'btn--success',
 }
 export const projects = {
     location: 'projects',
     title: 'Latest Projects',
-    subtitle: 'View the latest projects carried on by RBG Development',
+    subtitle: 'View our full projects portfolio up to date, our services in action',
     url: '/services',
     button: 'Services',
-    btnStyle: 'btn--info',
+    btnStyle: 'btn--danger',
 }
 export const contact = {
     location: 'contact',
     title: 'Contact',
-    subtitle: 'Contact us for more details',
-    url: '#contact',
-    button: 'Contact',
+    subtitle: 'Contact us for more details not available on our website',
+    url: '/about',
+    button: 'About us',
     btnStyle: 'btn--primary',
 }
 

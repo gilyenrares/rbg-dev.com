@@ -24,7 +24,7 @@ const HeroSection = ({
       {hasTop ? <div className={lightBg ? 'light-slope' : 'dark-slope'}></div> : null}
       <div className={lightBg ? 'py-40 text-black lightBg ' : 'py-40 text-white darkBg'}>
         <div className=' container md:container mx-auto'>
-          <div className=' grid md:grid-cols-2 grid-cols-1 items-center'>
+          <div className='mx-4 grid md:grid-cols-2 grid-cols-1 items-center'>
             <div className='flex flex-col items-center' style={{
               order: imgStart === true ? '1' : '0'
             }}>
