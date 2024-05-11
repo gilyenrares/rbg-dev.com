@@ -1,5 +1,5 @@
 import { Cards, HeroSection, Jumbotron, Newsletter } from '@/components'
-import { serviceObjFour, serviceObjOne, serviceObjThree, serviceObjTwo, services, servicesCards } from '@/constants'
+import { maintenanceCards, serviceObjFour, serviceObjOne, serviceObjThree, serviceObjTwo, services, servicesCards } from '@/constants'
 import React from 'react'
 
 const Services = () => {
@@ -9,6 +9,7 @@ const Services = () => {
       <HeroSection {...serviceObjOne} />
       <Cards cards={servicesCards} />
       <HeroSection {...serviceObjTwo} />
+      <Cards cards={maintenanceCards} />
       <HeroSection {...serviceObjThree} />
       <HeroSection {...serviceObjFour} />
       <Newsletter />

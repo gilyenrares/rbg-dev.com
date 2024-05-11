@@ -23,7 +23,7 @@ const Cards = (props: any) => {
               <div className='card-text my-auto'>
                 <h2 className=' text-4xl text-white text-center'>{card.price}</h2>
                 <ul className='text-center grid grid-cols-1 justify-items-start'>
-                  {card.itemList.map((item: any) => (<li key={item.id} className='flex items-center text-lg text-white'>{(item.isIncluded === true) ? <FaCheck className='mr-2 text-green-500' /> : <FaX className='mr-2 text-red-500' />} {item.name}</li>))}
+                  {card.itemList.map((item: any) => (<li key={item.id} className='flex items-center text-lg text-white'>{(item.isIncluded === true) ? <FaCheck className='mr-2 text-green-500 w-5' /> : <FaX className='mr-2 text-red-500' />} {item.name}</li>))}
 
                 </ul>
 
