@@ -2,7 +2,6 @@ import React from 'react'
 import './Cards.css'
 import Button from './Button'
 import Image from 'next/image'
-import { DiVim } from 'react-icons/di'
 import { FaCheck } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 
@@ -22,11 +21,14 @@ const Cards = (props: any) => {
             {(card.display === 'services') ?
               <div className='card-text my-auto'>
                 <h2 className=' text-4xl text-white text-center'>{card.price}</h2>
-                <ul className='text-center grid grid-cols-1 justify-items-start'>
-                  {card.itemList.map((item: any) => (<li key={item.id} className='flex items-center text-lg text-white'>{(item.isIncluded === true) ? <FaCheck className='mr-2 text-green-500 w-5' /> : <FaX className='mr-2 text-red-500' />} {item.name}</li>))}
+                <ul className='text-left grid grid-cols-1 justify-items-start'>
+                  {card.itemList.map((item: any) => (<li key={item.name + item.id} className='flex items-center text-lg text-white py-2'>{(item.isIncluded === true) ? <FaCheck className='mr-2 text-green-500 w-5' /> : <FaX className='mr-2 text-red-500' />} {item.name}</li>))}
 
                 </ul>
-
+                <hr></hr>
+                <div className='grid py-3 grid-cols-6 gap-1'>
+                  {card.techList.map((tech: any) => (<Image key={tech.id} className='' src={tech.url} height={20} width={20} alt='icon' />))}
+                </div>
               </div>
               :
               <article className='card-text my-auto'>

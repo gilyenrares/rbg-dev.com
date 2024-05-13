@@ -11,7 +11,6 @@ const Services = () => {
       <HeroSection {...serviceObjTwo} />
       <Cards cards={maintenanceCards} />
       <HeroSection {...serviceObjThree} />
-      <HeroSection {...serviceObjFour} />
       <Newsletter />
     </>
   )
