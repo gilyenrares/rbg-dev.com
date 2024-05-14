@@ -1,3 +1,4 @@
+import { title } from "process"
 
 // Jumbotron constants
 export const index = {
@@ -105,17 +106,18 @@ export const aboutObjTwo = {
     hasTop: false,
     hasBottom: true,
     lightBg: false,
-    topLine: 'WELCOME TO RBG DEVELOPMENT',
-    headline: 'About RBG',
+    topLine: 'Get to know RBG',
+    headline: 'Our values',
     description:{
-      p1:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quam dolores, aperiam natus earum eligendi illum perferendis quis recusandae vero.',
-      p2:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quam dolores, aperiam natus earum eligendi illum perferendis quis recusandae vero.',
+      p1:'Commitment in our small web development company is paramount. We dedicate ourselves to every project, ensuring high-quality results and timely delivery. Our team is passionate and driven, valuing client satisfaction above all.',
+      p2:'Reliability defines us. Clients trust our consistent performance and dependable solutions. We meet deadlines, maintain open communication, and provide robust, scalable web development services. Our reliability fosters strong, lasting client relationships.',
+      p3:'Our willingness to adapt and innovate sets us apart. We embrace new technologies, listen to client needs, and continuously improve. This proactive approach ensures we exceed expectations and deliver exceptional results.',
     },
-    buttonLink: '/about',
-    buttonLabel: 'Get Started',
+    buttonLink: '/contact',
+    buttonLabel: 'Get In Touch',
     buttonStyle: 'btn--primary',
     imgStart: false,
-    img: '/images/a1.png',
+    img: '/images/logo-lg.png',
     alt: 'Confidential'
 };
   
@@ -834,6 +836,8 @@ export const formProjectsList =[
     ],
   }
 ]
+
+
 // temporarily array of languages
 const tempCards =[
   { 
