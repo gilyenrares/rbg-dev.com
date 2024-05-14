@@ -9,7 +9,7 @@ import {
 import Link from 'next/link'
 import Image from 'next/image'
 import { FaSquareXTwitter } from 'react-icons/fa6'
-
+const currYear = new Date().getFullYear()
 const Footer = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const Footer = () => {
         </Link>
         <div className=" mx-5 text-center md:col-span-2 text-white">
           <div className=' whitespace-nowrap'>Copyright ©</div>
-          <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} /><div className=' whitespace-nowrap'>RBG-Development 2019-2024</div>
+          <Image className='inline-flex self-center mx-1' src="/logo.png" alt='RBG Logo' height={18} width={28} /><div className=' whitespace-nowrap'>RBG-Development 2019-{currYear}</div>
         </div>
         <div className='social-icons md:col-span-2 col mx-5'>
           <Link

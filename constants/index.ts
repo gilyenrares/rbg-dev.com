@@ -66,17 +66,18 @@ export const homeObjTwo = {
 	hasTop: true,
 	hasBottom: true,
 	lightBg: true,
-	topLine: '100% SECURE',
-	headline: 'Stay protected 24/7 anywhere anytime',
+	topLine: 'Discover RBG Development',
+	headline: 'Where Legacies are Created',
 	description: {
-		p1: 'On the front end of web development in order to create the overall layout of the website, HTML & CSS are used and combined. Furthermore, JavaScript more specifically jQuery, is used to animate and smooth out the website design, thus creating a pleasant user experience.',
-		p2: ' On the back end of web development, PHP and MySql are used to bring functionality into the website and sort and store relevant information in databases.',
+		p1: 'Highlighting past website projects showcases our expertise, creativity, and versatility, demonstrating our ability to deliver outstanding results tailored to your needs.',
+		p2: 'Explore our portfolio to discover a diverse range of website projects, each uniquely crafted to exceed client expectations and achieve business objectives.',
+		p3: 'Our previous website projects speak volumes about our commitment to excellence, innovation, and client satisfaction, providing a glimpse into the quality of work we deliver.',
 	},
-	buttonLink: '/about',
-	buttonLabel: 'Get Started',
+	buttonLink: '/projects',
+	buttonLabel: 'Portfolio',
 	buttonStyle: 'btn--primary',
 	imgStart: true,
-	img: 'images/svg-5.svg',
+	img: 'images/code.svg',
 	alt: 'Vault',
 };
 
@@ -88,12 +89,13 @@ export const aboutObjOne = {
     topLine: 'DISCOVER RBG DEVELOPMENT',
     headline: 'About RBG',
     description:{
-      p1:'On the front end of web development in order to create the overall layout of the website, HTML & CSS are used and combined. Furthermore, JavaScript more specifically jQuery, is used to animate and smooth out the website design, thus creating a pleasant user experience.',
-      p2:' On the back end of web development, PHP and MySql are used to bring functionality into the website and sort and store relevant information in databases.'
+      p1:'A small web design company blends creativity and functionality to craft visually stunning and user-friendly websites. With a focus on client needs, they deliver tailored solutions that exceed expectations.',
+      p2:'The passion for innovation drives RBG to stay updated with the latest trends and technologies, ensuring each website we create is cutting-edge and impactful.',
+      p3:'Our commitment to excellence shines through in every project, leaving a lasting legacy of beautifully designed websites that help businesses thrive in the digital world.'
     },
-    buttonLink: '/about',
+    buttonLink: '/',
     buttonLabel: 'Get Started',
-    buttonStyle: 'btn--primary',
+    buttonStyle: 'btn--danger',
     imgStart: false,
     img: '/images/disk-left.svg',
     alt: 'Confidential'
@@ -160,33 +162,21 @@ export const serviceObjThree = {
   hasTop: true,
   hasBottom: true,
   lightBg: false,
-  topLine: 'Vision -> Solution -> Legacy',
-  headline: 'Super fast and simple onboarding process',
-  description:
-    "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
-  buttonLink: '/about',
-  buttonLabel: 'Get Started',
-  buttonStyle: 'btn--primary',
+  topLine: 'Our Process from Start to Finish',
+  headline: 'Vision -> Solution -> Legacy',
+  description: {
+    p1: 'Understanding client needs is vital. It guides the design and functionality. Communication and collaboration are key for clarity and alignment throughout the process.',
+    p2: 'Development involves coding, testing, and refining. Iterative cycles ensure functionality, usability, and compatibility across devices and browsers.',
+    p3: 'Launch marks the culmination. Testing, feedback, and adjustments continue post-launch. Maintenance ensures ongoing functionality, security, and optimization for sustained success.',
+    },
+  buttonLink: '/projects',
+  buttonLabel: 'See Results',
+  buttonStyle: 'btn--info',
   imgStart: false,
   img: 'images/svg-7.svg',
   alt: 'Vault'
 };
 
-export const serviceObjFour = {
-  hasTop: true,
-  hasBottom: true,
-  lightBg: false,
-  topLine: 'DATA ANALYTICS',
-  headline: 'Every transaction is stored on our secure cloud database',
-  description:
-    'Never ever have to worry again about saved reciepts. We store your data, so you can access it anytime.',
-  buttonLink: '/about',
-  buttonLabel: 'Get Started',
-  buttonStyle: 'btn--primary',
-  imgStart: true,
-  img: '/images/svg-8.svg',
-  alt: 'Vault'
-};
 
 // project page
 export const projectObjOne = {
@@ -583,7 +573,7 @@ export const maintenanceCards =[
     id: 1,
     title: 'T1 Maintenance',
     type: 'Basic',
-    img: '/images/html5.svg',
+    img: '/images/coin.png',
     display:'services',
     price: '20£/month',
     itemList: [
@@ -613,7 +603,7 @@ export const maintenanceCards =[
     id:2,
     title: 'T2 Maintenance',
     type: 'Standard',
-    img: '/images/css3.svg',
+    img: '/images/bronze.png',
     display:'services',
     price: '50£/month',
     itemList: [
@@ -634,9 +624,11 @@ export const maintenanceCards =[
     ],
     techList: [
       {id: 1, url:'/images/html5.svg'},
-      {id: 2, url:'/images/css.svg'},
+      {id: 2, url:'/images/css3.svg'},
       {id: 3, url:'/images/bootstrap.svg'},
-      {id: 4, url:'/images/scss.svg'},
+      {id: 4, url:'/images/mysql.svg'},
+      {id: 5, url:'/images/php.svg'},
+      {id: 6, url:'/images/javascript.svg'},
     ],
     url: 'https://developer.mozilla.org/en-US/docs/Archive/CSS3',
   },
@@ -665,9 +657,11 @@ export const maintenanceCards =[
     ],
     techList: [
       {id: 1, url:'/images/html5.svg'},
-      {id: 2, url:'/images/css.svg'},
+      {id: 2, url:'/images/css3.svg'},
       {id: 3, url:'/images/bootstrap.svg'},
-      {id: 4, url:'/images/scss.svg'},
+      {id: 4, url:'/images/mysql.svg'},
+      {id: 5, url:'/images/php.svg'},
+      {id: 6, url:'/images/javascript.svg'},
     ],
     url: 'https://www.php.net/manual/en/intro-whatis.php',
   },
@@ -696,9 +690,11 @@ export const maintenanceCards =[
     ],
     techList: [
       {id: 1, url:'/images/html5.svg'},
-      {id: 2, url:'/images/css.svg'},
+      {id: 2, url:'/images/css3.svg'},
       {id: 3, url:'/images/bootstrap.svg'},
-      {id: 4, url:'/images/scss.svg'},
+      {id: 4, url:'/images/mysql.svg'},
+      {id: 5, url:'/images/php.svg'},
+      {id: 6, url:'/images/javascript.svg'},
     ],
     url: 'https://www.php.net/manual/en/intro-whatis.php',
   },
@@ -727,9 +723,11 @@ export const maintenanceCards =[
     ],
     techList: [
       {id: 1, url:'/images/html5.svg'},
-      {id: 2, url:'/images/css.svg'},
+      {id: 2, url:'/images/css3.svg'},
       {id: 3, url:'/images/bootstrap.svg'},
-      {id: 4, url:'/images/scss.svg'},
+      {id: 4, url:'/images/mysql.svg'},
+      {id: 5, url:'/images/php.svg'},
+      {id: 6, url:'/images/javascript.svg'},
     ],
     url: 'https://www.php.net/manual/en/intro-whatis.php',
   },
@@ -757,10 +755,12 @@ export const maintenanceCards =[
       {id:14, isIncluded: true, name: 'Dedicated Account Manager'},
     ],
     techList: [
-      {id: 1, url:'/images/html5.svg'},
-      {id: 2, url:'/images/css.svg'},
+     {id: 1, url:'/images/html5.svg'},
+      {id: 2, url:'/images/css3.svg'},
       {id: 3, url:'/images/bootstrap.svg'},
-      {id: 4, url:'/images/scss.svg'},
+      {id: 4, url:'/images/mysql.svg'},
+      {id: 5, url:'/images/php.svg'},
+      {id: 6, url:'/images/javascript.svg'},
     ],
     url: 'https://www.php.net/manual/en/intro-whatis.php',
   },

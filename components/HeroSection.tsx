@@ -33,8 +33,8 @@ const HeroSection = ({
                 {headline}
               </h1>
               <section className={lightBg ? 'hero-desc dark' : 'hero-desc'}>
-                <p>{description.p1}</p>
-                <p>{description.p2}</p>
+                <p className='pb-2'>{description.p1}</p>
+                <p className='pb-2'>{description.p2}</p>
                 <p>{description.p3}</p>
               </section>
               <Link href={buttonLink}>
@@ -43,7 +43,7 @@ const HeroSection = ({
                 </Button>
               </Link>
             </div>
-            <div className='flex flex-col items-center justify-center'>
+            <div className={imgStart === true ? 'flex flex-col items-center justify-center pr-5' : 'flex flex-col items-center justify-center pl-5'}>
               <Image src={img} alt={alt} width={400} height={100} className='max-w-full min-w-64 pt-10' />
             </div>
           </div>

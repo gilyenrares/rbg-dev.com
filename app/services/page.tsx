@@ -1,5 +1,5 @@
 import { Cards, HeroSection, Jumbotron, Newsletter } from '@/components'
-import { maintenanceCards, serviceObjFour, serviceObjOne, serviceObjThree, serviceObjTwo, services, servicesCards } from '@/constants'
+import { maintenanceCards, serviceObjOne, serviceObjThree, serviceObjTwo, services, servicesCards } from '@/constants'
 import React from 'react'
 
 const Services = () => {
