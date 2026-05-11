@@ -1,6 +1,8 @@
-import { HeroSection, Jumbotron, Newsletter } from '@/components'
+import HeroSection from '@/components/sections/HeroSection';
+import Jumbotron from '@/components/sections/Jumbotron';
+import Newsletter  from '@/components/sections/Newsletter';
 import { contact, contactObjOne, contactObjThree, contactObjTwo } from '@/constants'
-import { ContactForm } from '@/forms'
+import ContactForm  from '@/components/forms/ContactForm';
 import React from 'react'
 
 const Contact = () => {

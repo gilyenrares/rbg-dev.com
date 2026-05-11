@@ -1,13 +1,13 @@
 import React from 'react'
 import './page.css'
-import { SignUpForm } from '@/forms'
+import { Signup }  from '@/components/forms'
 
 const SignUp = () => {
   return (
     <>
       <div className='img-header h-10'></div>
       <div className='mx-4'>
-        <SignUpForm />
+        <Signup />
       </div>
       <div className='img-footer h-10'></div>
     </>

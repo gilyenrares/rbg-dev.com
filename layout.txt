@@ -1,0 +1,180 @@
+Folder                          Purpose
+src/
+│
+├── app/                        pages + API routes
+│   ├── api/
+│   │   ├── signup/
+│   │   │   └── route.ts
+│   │   └── auth/
+│   │       └── route.ts
+│   │
+│   ├── sign-up/
+│   │   └── page.tsx
+│   │
+│   ├── dashboard/
+│   │   └── page.tsx
+│   │
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── components/                 reusable UI
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Input.tsx
+│   │   ├── Select.tsx
+│   │   ├── Modal.tsx
+│   │   └── Card/
+│   │       ├── Card.tsx
+│   │       └── Card.module.css
+│   │
+│   ├── forms/
+│   │   ├── SignUpForm.tsx
+│   │   ├── LoginForm.tsx
+│   │   └── ProfileForm.tsx
+│   │
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   ├── Sidebar.tsx
+│   │   └── Footer.tsx
+│   │
+│   └── sections/
+│       │   └── Pricing/
+│       │       ├── Pricing.tsx
+│       │       ├── Pricing.module.css
+│       │       └── index.ts
+│       ├── Hero.tsx
+│       └── Features.tsx
+│
+├── lib/                        shared backend utilities
+│   ├── db.ts
+│   ├── auth.ts
+│   ├── validations.ts
+│   └── utils.ts
+│
+├── constants/                  static data
+│   └── index.ts
+│
+├── hooks/                      React hooks
+│   ├── useAuth.ts
+│   └── useTheme.ts
+│
+├── services/                   database/business logic
+│   ├── user.service.ts
+│   └── auth.service.ts
+│
+├── types/                      TypeScript types
+│   ├── user.types.ts
+│   └── project.types.ts
+│
+└── styles/                     extra CSS
+    └── forms.css
+
+    
+🚀 Most important architecture rule
+Keep logic OUT of pages
+❌ Bad
+page.tsx
+  huge form
+  database logic
+  state
+  helpers
+✅ Good
+page.tsx
+  ↓
+SignUpForm component
+  ↓
+service
+  ↓
+db
+✅ Best practice for forms
+Structure
+components/forms/
+
+Example:
+
+components/forms/SignUpForm.tsx
+components/forms/LoginForm.tsx
+✅ Best practice for UI
+Reusable UI
+components/ui/
+
+Example:
+
+Button.tsx
+Input.tsx
+Card.tsx
+Modal.tsx
+
+These should be generic.
+
+✅ Best practice for DB
+lib/db.ts
+
+Only database connection here.
+
+import { createPool } from "mysql2/promise"
+
+export const pool = createPool({...})
+✅ Best practice for SQL/business logic
+
+Instead of writing SQL inside routes:
+
+Use services
+
+Example:
+
+services/user.service.ts
+Example
+import { pool } from "@/lib/db"
+
+export async function createUser(data: any) {
+  return pool.execute(
+    "INSERT INTO users (email) VALUES (?)",
+    [data.email]
+  )
+}
+
+Then your API route becomes tiny.
+
+✅ Best practice for API routes
+Keep routes thin
+❌ Bad
+
+Huge SQL + validation + logic
+
+✅ Good
+import { createUser } from "@/services/user.service"
+
+export async function POST(req: Request) {
+  const body = await req.json()
+
+  await createUser(body)
+
+  return Response.json({ success: true })
+}
+🚨 Folder mistake to avoid
+❌ Don’t do this
+components/
+  Button.tsx
+  SignUp.tsx
+  Navbar.tsx
+  Modal.tsx
+  Card.tsx
+  RandomThing.tsx
+
+This becomes chaos fast.
+
+🚀 My recommendation for YOU specifically
+
+Since you're rebuilding:
+
+Start simple:
+app/
+components/
+lib/
+services/
+types/
+constants/
+
+You can grow later.

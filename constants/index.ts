@@ -1,4 +1,3 @@
-import { title } from "process"
 
 // Jumbotron constants
 export const index = {
@@ -482,7 +481,7 @@ export const servicesCards =[
     id:2,
     title: 'Standard Web Page',
     type: 'Dynamic',
-    img: '/images/css3.svg',
+    img: '/images/php.svg',
     display:'services',
     price: '100£/page',
     itemList: [
@@ -524,7 +523,7 @@ export const servicesCards =[
     id:3,
     title: 'Premium Web Page',
     type: 'Interactive',
-    img: '/images/php.svg',
+    img: '/images/react.svg',
     display:'services',
     price: '150£/page',
     itemList: [
@@ -825,18 +824,19 @@ export const footerLinks=[
 ]
 
 // Form projects list
-export const formProjectsList =[
-  {
-    title: 'Select Project',
-    options:[
-      {option: 'EseuriBac'},
-      {option: 'EasyFixPM'},
-      {option: 'TopRoofers'},
-      {option: 'MiraSoil'},
-    ],
-  }
+export const projectsList =[
+  {id:1, option: 'EseuriBac', value: 'eseuribac.ro'},
+  {id:2, option: 'EasyFixPM', value: 'easyfixpm.co.uk'},
+  {id:3, option: 'TopRoofers', value: 'toproofers.co.uk'},
+  {id:4, option: 'MiraSoil', value: 'mirasoil.ro'},
 ]
-
+// Account types list
+export const accountTypes =[
+{id : 1, type: 'Owner'},
+{id : 2, type: 'Manager'},
+{id : 3, type: 'Developer'},
+{id : 4, type: 'Marketer'},
+]
 
 // temporarily array of languages
 const tempCards =[

@@ -1,4 +1,6 @@
-import { HeroSection, Jumbotron, Newsletter } from '@/components'
+import  HeroSection from '@/components/sections/HeroSection';
+import Jumbotron from '@/components/sections/Jumbotron';
+import Newsletter  from '@/components/sections/Newsletter';
 import { projectObjFour, projectObjOne, projectObjThree, projectObjTwo, projects } from '@/constants'
 import React from 'react'
 

@@ -1,16 +1,13 @@
-import Navigation from "./Navigation";
-import Jumbotron from "./Jumbotron";
+import Navigation from "./layout/Navigation/Navigation";
 import Hero from "./Hero";
-import Button from "./Button";
-import Footer from "./Footer";
-import Pricing from "./Pricing";
-import HeroSection from "./HeroSection";
-import Cards from "./Cards";
-import Newsletter from "./Newsletter";
-import SelectProjects from "./SelectProjects";
-import Account from "./Account";
+import Footer from "./layout/Footer";
+import HeroSection from "./sections/HeroSection/HeroSection";
+import SignupProject from "./SignupProject";
+import SignupAccount from "./SignupAccount";
+import SignupProfile from "./SignupProfile";
+import Account from "./forms/Account";
 
 
 export{
-  Jumbotron, Hero, Button, Navigation, Footer, Pricing, HeroSection, Cards, Newsletter, SelectProjects, Account,
+    Hero,  Navigation, Footer, HeroSection,  SignupProfile, SignupProject, SignupAccount, Account
 }
