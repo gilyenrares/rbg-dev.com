@@ -207,30 +207,30 @@ export default function EnhancedBackground() {
 
 
   // Smooth scrolling
-  const anchors = document.querySelectorAll('a[href^="#"]');
-  anchors.forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      const href = this.getAttribute('href') ;
-      // Only prevent default and scroll if href is more than just '#'
-      if (href && href.length > 1) {
-        e.preventDefault();
-        if (href === '#top') {
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
-        } else {
-          const target = document.querySelector(href);
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start',
-            });
-          }
-        }
-      }
-    });
-  });
+  // const anchors = document.querySelectorAll('a[href^="#"]');
+  // anchors.forEach(anchor => {
+  //   anchor.addEventListener('click', function (e) {
+  //     const href = this.getAttribute('href') ;
+  //     // Only prevent default and scroll if href is more than just '#'
+  //     if (href && href.length > 1) {
+  //       e.preventDefault();
+  //       if (href === '#top') {
+  //         window.scrollTo({
+  //           top: 0,
+  //           behavior: 'smooth',
+  //         });
+  //       } else {
+  //         const target = document.querySelector(href);
+  //         if (target) {
+  //           target.scrollIntoView({
+  //             behavior: 'smooth',
+  //             block: 'start',
+  //           });
+  //         }
+  //       }
+  //     }
+  //   });
+  // });
 
   // Navbar scroll effect
   window.addEventListener('scroll', () => {
