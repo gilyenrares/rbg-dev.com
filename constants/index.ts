@@ -2,49 +2,69 @@
 // Jumbotron constants
 export const index = {
     location: 'index',
-    title: 'RBG Development',
-    subtitle: 'NextJs, React, JavaScript, Php, Sql, Tailwind & More',
-    url: '/about',
-    button: 'More',
-    btnStyle: 'btn--info',
+    titleCyan: 'NEO',
+    titlePurple: 'NEXUS',
+    subtitle: 'Unleash the power of innovation in your business. Connect your vision to the digital world. Connect minds, sync realities, achieve impossible.',
+    urlOne: '/services',
+    buttonOne: 'Initialise System',
+    btnStyleOne: 'btn-primary',
+    urlTwo: '/projects',
+    buttonTwo: 'View Portfolio',
+    btnStyleTwo: 'btn-secondary',
 }
 export const about = {
     location: 'about',
-    title: 'About RBG',
+    titleCyan: 'About',
+    titlePurple: 'NEXUS',
     subtitle: 'Development, Maintenance , Features,  Vision & more.',
-    url: '/projects',
-    button: 'Examples',
-    btnStyle: 'btn--warning',
+    urlOne: '/projects',
+    buttonOne: 'Examples',
+    btnStyleOne: 'btn--warning',
+    urlTwo: '/projects',
+    buttonTwo: 'View Portfolio',
+    btnStyleTwo: 'btn-secondary',
 }
 export const services = {
     location: 'services',
-    title: 'Our Web Services',
+    titleCyan: 'Nexus',
+    titlePurple: 'Services',
     subtitle: 'Design, Development, Maintenance, Security & more',
-    url: '/contact',
-    button: 'Contact Us',
-    btnStyle: 'btn--success',
+    urlOne: '/contact',
+    buttonOne: 'Contact Us',
+    btnStyleOne: 'btn--success',
+    urlTwo: '/projects',
+    buttonTwo: 'View Portfolio',
+    btnStyleTwo: 'btn-secondary',
 }
 export const projects = {
     location: 'projects',
-    title: 'Latest Projects',
+    titleCyan: 'NEXUS',
+    titlePurple: 'Projects',
     subtitle: 'View our full projects portfolio up to date, our services in action',
-    url: '/services',
-    button: 'Services',
-    btnStyle: 'btn--danger',
+    urlOne: '/services',
+    buttonOne: 'Services',
+    btnStyleOne: 'btn--danger',
+    urlTwo: '/projects',
+    buttonTwo: 'View Portfolio',
+    btnStyleTwo: 'btn-secondary',
 }
 export const contact = {
     location: 'contact',
-    title: 'Contact',
+    titleCyan: 'Contact',
+    titlePurple: 'NEXUS',
     subtitle: 'Contact us for more details not available on our website',
-    url: '/about',
-    button: 'About us',
-    btnStyle: 'btn--primary',
+    urlOne: '/about',
+    buttonOne: 'About us',
+    btnStyleOne: 'btn--primary',
+    urlTwo: '/projects',
+    buttonTwo: 'View Portfolio',
+    btnStyleTwo: 'btn-secondary',
 }
 
 // HeroSections constants for all the pages
 // index page
 export const homeObjOne = {
-	hasTop: false,
+	hasTop: true,
 	hasBottom: true,
 	lightBg: false,
 	topLine: 'WELCOME TO RBG DEVELOPMENT',
@@ -83,7 +103,7 @@ export const homeObjTwo = {
 
 // about page
 export const aboutObjOne = {
-    hasTop: false,
+    hasTop: true,
     hasBottom: true,
     lightBg: false,
     topLine: 'DISCOVER RBG DEVELOPMENT',
@@ -102,7 +122,7 @@ export const aboutObjOne = {
 };
   
 export const aboutObjTwo = {
-    hasTop: false,
+    hasTop: true,
     hasBottom: true,
     lightBg: false,
     topLine: 'Get to know RBG',
@@ -122,7 +142,7 @@ export const aboutObjTwo = {
   
 // services page
 export const serviceObjOne = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: 'Our Exclusive Services',
@@ -181,7 +201,7 @@ export const serviceObjThree = {
 
 // project page
 export const projectObjOne = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: 'Our Recent Projects',
@@ -263,7 +283,7 @@ export const projectObjFive = {
 
 // contact page
 export const contactObjOne = {
-  hasTop: false,
+  hasTop: true,
   hasBottom: true,
   lightBg: false,
   topLine: 'SIGN UP TODAY',
