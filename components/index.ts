@@ -1,4 +1,4 @@
-import Navigation from "./layout/Navigation/Navigation";
+
 import Hero from "./Hero";
 import Footer from "./layout/Footer";
 import HeroSection from "./sections/HeroSection/HeroSection";
@@ -9,5 +9,5 @@ import Account from "./forms/Account";
 
 
 export{
-    Hero,  Navigation, Footer, HeroSection,  SignupProfile, SignupProject, SignupAccount, Account
+    Hero, Footer, HeroSection,  SignupProfile, SignupProject, SignupAccount, Account
 }
