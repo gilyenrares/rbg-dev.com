@@ -1,17 +1,13 @@
 import React from 'react'
 import './page.css'
-import { Account } from '@/components'
+import AccessPoint from '@/components/sections/AccessPoint';
 
-const SignUp = () => {
+const Account = () => {
   return (
     <>
-      <div className='img-header h-10'></div>
-      <div className='img-body flex flex-col justify-center'>
-        <Account />
-      </div>
-      <div className='img-footer h-10'></div>
+      <AccessPoint />
     </>
   )
 }
 
-export default SignUp
+export default Account
