@@ -44,7 +44,7 @@ const HeroSection = ({
               </Link>
             </div>
             <div className={imgStart === true ? 'flex flex-col items-center justify-center pr-5' : 'flex flex-col items-center justify-center pl-5'}>
-              <Image src={img} alt={alt} width={400} height={100} className='max-w-full min-w-64 pt-10' />
+              <Image src={img} alt={alt} width={400} height={400} className='pt-10' />
             </div>
           </div>
         </div>

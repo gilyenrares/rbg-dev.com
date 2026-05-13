@@ -251,9 +251,6 @@ nav {
 	padding: 2rem;
 	flex-shrink: 0;
 	border-bottom: 1px solid var(--border-color);
-	position: fixed;
-	bottom: 40px;
-	right: 25px;
 }
 .mobile-menu-cta a {
 	margin: 1rem 0;
@@ -304,7 +301,7 @@ nav {
 }
 
 /* Desktop Navigation Layout */
-@media (min-width: 769px) {
+@media (min-width: 961px) {
 	.mobile-menu-button {
 		display: none !important;
 	}
@@ -440,13 +437,13 @@ nav {
 	width: 100%;
 }
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 960px) {
 	.mobile-menu-button {
 		display: block !important;
 	}
 
 	.nav-links {
-		display: none;
+		display: none !important;
 	}
 
 	.nav-bottom .cyber-button {

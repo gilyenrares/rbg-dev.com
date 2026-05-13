@@ -33,26 +33,31 @@ const NavBar = () => {
 	return (
 		<>
 			<nav>
-				<div className="nav-container">
-					<a href="#top" className="logo">
+				<div className="nav-container"> 
+          {/* for smooth scroll 
+          <a href="#top" className="logo">
+						NeoNexus
+					</a> */}
+
+					<a href="/template" className="logo">
 						NeoNexus
 					</a>
 
-					<ul className="nav-links $">
-						<li><a href="#features" onClick={closeMenu}>Features</a></li>
-						<li><a href="#pricing" onClick={closeMenu}>Pricing</a></li>
-						<li><a href="#stats" onClick={closeMenu}>Stats</a></li>
-						<li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+					<ul className={`nav-links ${open ? "" : "active"}`}>
+						<li><a href="/" >Home</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 
 					{showButton && (
             <Link href="/account">
-              <Button
-                className="btn--clip"
-                buttonSize="btn--large"
-                buttonStyle="btn--info"
+              <button
+                className="btn-primary"
+                
               >Terminal
-              </Button>
+              </button>
             </Link>
 					)}
 
@@ -79,7 +84,7 @@ const NavBar = () => {
 
 			{/* mobile menu */}
 			<div className={`mobile-menu ${open ? "active" : ""}`}>
-				<div className="mobile-menu-header">
+				{/* <div className="mobile-menu-header">
 					<a href="#top" className="mobile-menu-logo">
 						NeoNexus
 					</a>
@@ -90,23 +95,21 @@ const NavBar = () => {
 					>
 						✕
 					</button>
-				</div>
+				</div> */}
 
 				<div className="mobile-menu-cta">
-					<a href="#" className="cyber-button">
-						Access Terminal
-					</a>
-          <a href="#" className="cyber-button">
-						Access Terminal
-					</a>
+					<Link href="/account">
+              <button className="btn-primary">Terminal</button>
+            </Link>
 				</div>
 
 				<nav className="mobile-menu-nav">
 					<ul>
-						<li><a href="#features" onClick={closeMenu}>Features</a></li>
-						<li><a href="#pricing" onClick={closeMenu}>Pricing</a></li>
-						<li><a href="#stats" onClick={closeMenu}>Stats</a></li>
-						<li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+						<li><a href="/" >Home</a></li>
+						<li><a href="/services">Services</a></li>
+						<li><a href="/projects">Projects</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>

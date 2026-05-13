@@ -1,15 +1,16 @@
 .top-slope {
 	background: rgba(255, 255, 255, 0);
 	border-style: solid;
-	border-color: rgba(255, 255, 255, 0) #1c2237 #1c2237 rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 0) #1c223790 #1c223790 rgba(255, 255, 255, 0);
 	border-top-width: 2vh;
 	border-bottom-width: 6vh;
 	border-left-width: 98vw;
 	border-right-width: 0px;
 	z-index: 1;
+	margin-top: 140px;
 }
 .footer-container {
-	background-color: #1c2237;
+	background-color: #1c223790;
 	padding: 4rem 0 2rem 0;
 	display: flex;
 	flex-direction: column;

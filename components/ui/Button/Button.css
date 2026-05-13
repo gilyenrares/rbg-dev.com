@@ -22,6 +22,9 @@
 	padding: 16px 78px;
 	font-size: 20px;
 }
+.btn--clip {
+	clip-path: polygon(20px 0%, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
 /* btn--custom or backbone */
 .btn--custom {
 	display: inline-flex;
